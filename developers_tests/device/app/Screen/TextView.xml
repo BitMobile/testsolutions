@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="TextView.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Change text" OnClick="$ChangeText()" OnEvent="Back" />
+		<c:ScrollView>			
+			<c:TextView Id="tvTest1" Text="Default text: fp рй." />
+			<c:TextView Id="tvTest2"
+				Text="Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй." />
+			<c:TextView Id="tvTest3" CssClass="center_singleline"
+				Text="Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. Center singleline text: fp рй. " />
+			<c:TextView Id="tvTest4" CssClass="center_singleline" Text="Center singleline text: fp рй." />
+			<c:TextView Id="tvTest5" CssClass="right_singleline"
+				Text="Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. Right singleline text: fp рй. " />
+			<c:TextView Id="tvTest6" CssClass="multiline"
+				Text="Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. Multilne text: fp рй. " />
+			<c:TextView Id="tvTest7" CssClass="center_multiline"
+				Text="Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. Center multilne text: fp рй. " />
+			<c:TextView Id="tvTest8" CssClass="center_multiline" Text="Center multilne text: fp рй." />
+			<c:TextView Id="tvTest9" CssClass="right_multiline"
+				Text="Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. Right multilne text: fp рй. " />
+			<c:TextView Id="tvTest10" CssClass="big_font" Text="Big font: fp рй." />
+			<c:TextView Id="tvTest11" CssClass="half_font" Text="Half font: fp рй." />
+			<c:TextView Id="tvTest12" CssClass="small_font" Text="Small font: fp рй." />
+			<c:VerticalLayout OnClick="$Empty()">
+				<c:TextView Id="tvTest13" CssClass="selected_color" Text="Clickable." />
+			</c:VerticalLayout>
+			<c:TextView Id="tvTest14" CssClass="singleline_padding"
+				Text="Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. Singleline padding: fp рй. " />
+			<c:TextView Id="tvTest15" CssClass="singleline_padding" Text="Singleline padding: fp рй." />
+			<c:TextView Id="tvTest16" CssClass="multilineline_padding"
+				Text="Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. " />
+			<c:TextView Id="tvTest17" CssClass="multilineline_padding" Text="Multiline padding: fp рй." />
+
+			<!-- <c:TextView CssClass="" Text=""/> -->
+
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

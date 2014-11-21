@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Id="btnStart" Text="Start" OnClickAction="$Start()" />
+		<c:Button Id="btnStop" Text="Stop" OnClickAction="$Stop()" />
+		<c:TextView Id="tvStatus" />
+		
+		<c:ScrollView>
+			<c:HorizontalLine />
+			<c:TextView Text="IsBestAccuracy" />
+			<c:CheckBox Id="chxAccuracy" Checked="true" />
+			<c:HorizontalLine />
+
+			<c:TextView Text="MinInterval" />
+			<c:EditText Id="edtMinInterval" Keyboard="numeric" Text="60" />
+			<c:HorizontalLine />
+
+			<c:TextView Text="MinDistance" />
+			<c:EditText Id="edtMinDistance" Keyboard="numeric" Text="0" />
+			<c:HorizontalLine />
+
+			<c:TextView Text="DistanceFilter" />
+			<c:EditText Id="edtDistanceFilter" Keyboard="numeric"
+				Text="3" />
+			<c:HorizontalLine />
+
+			<c:TextView Text="SendInterval" />
+			<c:EditText Id="edtSendInterval" Keyboard="numeric" Text="30" />
+			<c:HorizontalLine />
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

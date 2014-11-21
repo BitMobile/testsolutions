@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="GPSTracking.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Set value to clipboard" OnClick="$Set($edtClipboard.Text)" />
+		<c:EditText Id="edtClipboard" Text="" />
+		<c:Button Text="Get value from clipboard" OnClick="$Get($tvClipboard)" />
+		<c:TextView Id="tvClipboard" Text=""/>		
+		<c:HorizontalLine />
+	</c:VerticalLayout>
+</c:Screen>

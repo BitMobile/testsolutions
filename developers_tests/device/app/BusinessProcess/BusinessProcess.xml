@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bp:BusinessProcess xmlns:bp="BitMobile.BusinessProcess">
+
+	<bp:Workflow Name="Main" Controller="Main\Main.js">
+		<bp:Step Name="Menu" Screen="Main.xml">
+			<bp:Action Name="SizeToContent" NextWorkflow="SizeToContent" />
+			<bp:Action Name="TextView" NextWorkflow="TextView" />
+			<bp:Action Name="HtmlTextView" NextWorkflow="HtmlTextView" />
+			<bp:Action Name="ApplicationCmd" NextWorkflow="ApplicationCmd" />
+			<bp:Action Name="GPSTracking" NextWorkflow="GPSTracking" />
+			<bp:Action Name="EditText_MemoEdit" NextWorkflow="EditText_MemoEdit" />
+			<bp:Action Name="Clipboard" NextWorkflow="Clipboard" />
+		</bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="SizeToContent">
+		<bp:Step Name="SizeToContent" Screen="SizeToContent.xml"
+			Controller="SizeToContent.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="TextView">
+		<bp:Step Name="TextView" Screen="TextView.xml" Controller="TextView.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="HtmlTextView">
+		<bp:Step Name="HtmlTextView" Screen="HtmlTextView.xml"
+			Controller="TextView.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="ApplicationCmd">
+		<bp:Step Name="ApplicationCmd" Screen="ApplicationCmd.xml"
+			Controller="ApplicationCmd.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="GPSTracking">
+		<bp:Step Name="GPSTracking" Screen="GPSTracking.xml"
+			Controller="GPSTracking.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="EditText_MemoEdit">
+		<bp:Step Name="EditText_MemoEdit" Screen="EditText_MemoEdit.xml"
+			Controller="EditText_MemoEdit.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="Clipboard">
+		<bp:Step Name="Clipboard" Screen="Clipboard.xml"
+			Controller="Clipboard.js" />
+	</bp:Workflow>
+
+</bp:BusinessProcess>

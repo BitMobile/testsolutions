@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Set focus to EditText" OnClick="$SetFocus($edtEditText)" />
+		<c:Button Text="Set focus to MemoEdit" OnClick="$SetFocus($edtMemoEdit)" />
+		<c:TextView Id="txtCurrent" Text="" />
+
+		<c:ScrollView>
+			<c:HorizontalLine />
+
+			<c:TextView Id="tvEditText" Text="" />
+			<c:EditText Id="edtEditText" Text=""
+				OnGetFocus="$OnGetFocus($tvEditText)" OnLostFocus="$OnLostFocus($tvEditText)" />
+			<c:HorizontalLine />
+
+			<c:TextView Id="tvMemoEdit" Text="" />
+			<c:MemoEdit Id="edtMemoEdit" Text=""
+				OnGetFocus="$OnGetFocus($txtMemoEdit)" OnLostFocus="$OnLostFocus($tvMemoEdit)" />
+			<c:HorizontalLine />
+
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

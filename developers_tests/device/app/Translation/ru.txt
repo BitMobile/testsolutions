@@ -1,0 +1,5 @@
+﻿b	<b>
+_b	</b>
+i	<i>
+_i	</i>
+defaultText	<b><font color="#FF0000">Hello</font> <i>World</i></b>
