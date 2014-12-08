@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:EditText Id="edtEditText" Text="Hello world!" />
+		<c:Button Text="Console.WriteLine" OnClick="$ConsoleWriteLine($edtEditText.Text)" />
+	</c:VerticalLayout>
+</c:Screen>

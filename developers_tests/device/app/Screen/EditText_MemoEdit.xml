@@ -16,7 +16,7 @@
 
 			<c:TextView Id="tvMemoEdit" Text="" />
 			<c:MemoEdit Id="edtMemoEdit" Text=""
-				OnGetFocus="$OnGetFocus($txtMemoEdit)" OnLostFocus="$OnLostFocus($tvMemoEdit)" />
+				OnGetFocus="$OnGetFocus($tvMemoEdit)" OnLostFocus="$OnLostFocus($tvMemoEdit)" />
 			<c:HorizontalLine />
 
 		</c:ScrollView>

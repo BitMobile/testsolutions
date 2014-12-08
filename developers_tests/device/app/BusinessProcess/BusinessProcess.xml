@@ -10,6 +10,7 @@
 			<bp:Action Name="GPSTracking" NextWorkflow="GPSTracking" />
 			<bp:Action Name="EditText_MemoEdit" NextWorkflow="EditText_MemoEdit" />
 			<bp:Action Name="Clipboard" NextWorkflow="Clipboard" />
+			<bp:Action Name="Debug" NextWorkflow="Debug" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -43,8 +44,11 @@
 	</bp:Workflow>
 
 	<bp:Workflow Name="Clipboard">
-		<bp:Step Name="Clipboard" Screen="Clipboard.xml"
-			Controller="Clipboard.js" />
+		<bp:Step Name="Clipboard" Screen="Clipboard.xml" Controller="Clipboard.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="Debug">
+		<bp:Step Name="Debug" Screen="Debug.xml" Controller="Debug.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>
