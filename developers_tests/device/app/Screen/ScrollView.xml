@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack" StyleSheet="EditText_MemoEdit.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Scroll by index" OnClick="$Scroll($edtIndex.Text)" />	
+		<c:EditText Id="edtIndex" Text="15" Keyboard="numeric"/>
+		<c:HorizontalLine/>
+		<c:ScrollView Id="sv">			
+			<c:TextView Text="0" />
+			<c:TextView Text="1" />
+			<c:TextView Text="2" />
+			<c:TextView Text="3" />
+			<c:TextView Text="4" />
+			<c:TextView Text="5" />
+			<c:TextView Text="6" />
+			<c:TextView Text="7" />
+			<c:TextView Text="8" />
+			<c:TextView Text="9" />
+			<c:TextView Text="10" />
+			<c:TextView Text="11" />
+			<c:TextView Text="12" />
+			<c:TextView Text="13" />
+			<c:TextView Text="14" />
+			<c:TextView Text="15" />
+			<c:TextView Text="16" />
+			<c:TextView Text="17" />
+			<c:TextView Text="18" />
+			<c:TextView Text="19" />
+			<c:TextView Text="20" />
+			<c:TextView Text="21" />
+			<c:TextView Text="22" />
+			<c:TextView Text="23" />
+			<c:TextView Text="24" />
+			<c:TextView Text="25" />
+			<c:TextView Text="26" />
+			<c:TextView Text="27" />
+			<c:TextView Text="28" />
+			<c:TextView Text="29" />
+			<c:TextView Text="30" />
+			<c:TextView Text="31" />
+			<c:TextView Text="32" />
+			<c:TextView Text="33" />
+			<c:TextView Text="34" />
+			<c:TextView Text="35" />
+			<c:TextView Text="36" />
+			<c:TextView Text="37" />
+			<c:TextView Text="38" />
+			<c:TextView Text="39" />
+			<c:TextView Text="40" />
+			<c:TextView Text="41" />
+			<c:TextView Text="42" />
+			<c:TextView Text="43" />
+			<c:TextView Text="44" />
+			<c:TextView Text="45" />
+			<c:TextView Text="46" />
+			<c:TextView Text="47" />
+			<c:TextView Text="48" />
+			<c:TextView Text="49" />
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

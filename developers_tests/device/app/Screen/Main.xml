@@ -9,5 +9,6 @@
 		<c:Button Text="EditText and MemoEdit" OnClickAction="$DoAction(EditText_MemoEdit)" />
 		<c:Button Text="Clipboard" OnClickAction="$DoAction(Clipboard)" />
 		<c:Button Text="Debug" OnClickAction="$DoAction(Debug)" />
+		<c:Button Text="ScrollView" OnClickAction="$DoAction(ScrollView)" />
 	</c:ScrollView>
 </c:Screen>
