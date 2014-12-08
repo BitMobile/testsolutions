@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack" StyleSheet="EditText_MemoEdit.css">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Set focus to EditText" OnClick="$SetFocus($edtEditText)" />
@@ -17,6 +17,15 @@
 			<c:TextView Id="tvMemoEdit" Text="" />
 			<c:MemoEdit Id="edtMemoEdit" Text=""
 				OnGetFocus="$OnGetFocus($tvMemoEdit)" OnLostFocus="$OnLostFocus($tvMemoEdit)" />
+			<c:HorizontalLine />
+			
+			<c:EditText Placeholder="Default (EditText)" />
+			<c:HorizontalLine />
+			<c:MemoEdit Placeholder="Default (MemoEdit)" />
+			<c:HorizontalLine />		
+			<c:EditText Placeholder="Styled (EditText)" CssClass="green_placeholder" />
+			<c:HorizontalLine />
+			<c:MemoEdit Placeholder="Styled (MemoEdit)" CssClass="green_placeholder"/>
 			<c:HorizontalLine />
 
 		</c:ScrollView>
