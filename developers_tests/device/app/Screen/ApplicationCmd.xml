@@ -2,7 +2,10 @@
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:Button Text="Exit" OnClickAction="$Exit()" />
-		<c:Button Text="Log out" OnClickAction="$LogOut()" />
+		<c:Button Text="Exit" OnClick="$Exit()" />
+		<c:Button Text="Log out" OnClick="$LogOut()" />
+		<c:Button Text="Send log" OnClick="$SendLog()" />
+		<c:Button Text="Clear log" OnClick="$ClearLog()" />
+		<c:TextView Text="$DBSize()"/>
 	</c:VerticalLayout>
 </c:Screen>

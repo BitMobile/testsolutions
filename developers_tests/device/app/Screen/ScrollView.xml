@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack" StyleSheet="EditText_MemoEdit.css">
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="EditText_MemoEdit.css">
+
+	<s:Push Id="offset" Value="$NullOrDefault($param1, 15)" />
+
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:Button Text="Scroll by index" OnClick="$Scroll($edtIndex.Text)" />	
-		<c:EditText Id="edtIndex" Text="15" Keyboard="numeric"/>
-		<c:HorizontalLine/>
-		<c:ScrollView Id="sv">			
+		<c:Button Text="Scroll by index" OnClick="$Scroll($edtIndex.Text)" />
+		<c:Button Text="Refresh and Scroll" OnClick="$RefreshAndScroll($edtIndex.Text)" />
+		<c:EditText Id="edtIndex" Text="$offset" Keyboard="numeric" />
+		<c:HorizontalLine />
+		<c:ScrollView Id="sv">
 			<c:TextView Text="0" />
 			<c:TextView Text="1" />
 			<c:TextView Text="2" />
