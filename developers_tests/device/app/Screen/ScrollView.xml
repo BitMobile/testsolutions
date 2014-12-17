@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
-	StyleSheet="EditText_MemoEdit.css">
+	StyleSheet="ScrollView.css">
 
 	<s:Push Id="offset" Value="$NullOrDefault($param1, 15)" />
 

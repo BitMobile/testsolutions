@@ -20,7 +20,8 @@ function ClearLog()
 	Application.ClearLog();
 }
 
-function DBSize()
+function GetDBSize()
 {
-	return DB.Size.ToString();
+	var size = DB.Size.ToString();
+	Dialog.Message(size);
 }

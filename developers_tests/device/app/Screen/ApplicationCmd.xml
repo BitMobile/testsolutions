@@ -6,6 +6,6 @@
 		<c:Button Text="Log out" OnClick="$LogOut()" />
 		<c:Button Text="Send log" OnClick="$SendLog()" />
 		<c:Button Text="Clear log" OnClick="$ClearLog()" />
-		<c:TextView Text="$DBSize()"/>
+		<c:Button Text="Get db size" OnClick="$GetDBSize()" />
 	</c:VerticalLayout>
 </c:Screen>
