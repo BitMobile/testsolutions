@@ -11,7 +11,8 @@
 			<bp:Action Name="EditText_MemoEdit" NextWorkflow="EditText_MemoEdit" />
 			<bp:Action Name="Clipboard" NextWorkflow="Clipboard" />
 			<bp:Action Name="Debug" NextWorkflow="Debug" />
-			<bp:Action Name="ScrollView" NextWorkflow="ScrollView" />			
+			<bp:Action Name="ScrollView" NextWorkflow="ScrollView" />
+			<bp:Action Name="BarcodeScanner" NextWorkflow="BarcodeScanner" />			
 		</bp:Step>
 	</bp:Workflow>
 
@@ -54,6 +55,10 @@
 
 	<bp:Workflow Name="ScrollView">
 		<bp:Step Name="ScrollView" Screen="ScrollView.xml" Controller="ScrollView.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="BarcodeScanner">
+		<bp:Step Name="BarcodeScanner" Screen="BarcodeScanner.xml" Controller="BarcodeScanner.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>

@@ -10,5 +10,6 @@
 		<c:Button Text="Clipboard" OnClickAction="$DoAction(Clipboard)" />
 		<c:Button Text="Debug" OnClickAction="$DoAction(Debug)" />
 		<c:Button Text="ScrollView" OnClickAction="$DoAction(ScrollView)" />
+		<c:Button Text="BarcodeScanner" OnClickAction="$DoAction(BarcodeScanner)" />
 	</c:ScrollView>
 </c:Screen>
