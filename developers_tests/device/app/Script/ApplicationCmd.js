@@ -25,3 +25,15 @@ function GetDBSize()
 	var size = DB.Size.ToString();
 	Dialog.Message(size);
 }
+
+function GetCoreVersion()
+{
+	var ver = Application.CoreVersion;
+	Dialog.Message(ver);
+}
+
+function GetResourceVersion()
+{
+	var ver = Application.ResourceVersion;
+	Dialog.Message(ver);
+}

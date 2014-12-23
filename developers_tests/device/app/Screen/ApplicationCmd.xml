@@ -7,5 +7,7 @@
 		<c:Button Text="Send log" OnClick="$SendLog()" />
 		<c:Button Text="Clear log" OnClick="$ClearLog()" />
 		<c:Button Text="Get db size" OnClick="$GetDBSize()" />
+		<c:Button Text="Get core version" OnClick="$GetCoreVersion()" />
+		<c:Button Text="Get resource version" OnClick="$GetResourceVersion()" />
 	</c:VerticalLayout>
 </c:Screen>
