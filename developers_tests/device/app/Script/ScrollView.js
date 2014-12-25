@@ -1,6 +1,8 @@
 function OnLoad()
 {
-	$.sv.Index = parseInt($.edtIndex.Text);
+	var indx = parseInt($.edtIndex.Text);
+	if(indx != -1)
+		$.sv.Index = indx;
 }
 
 function NullOrDefault(value, defaultValue)
