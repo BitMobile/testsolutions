@@ -14,6 +14,7 @@
 			<bp:Action Name="ScrollView" NextWorkflow="ScrollView" />
 			<bp:Action Name="BarcodeScanner" NextWorkflow="BarcodeScanner" />
 			<bp:Action Name="Crash" NextWorkflow="Crash" />
+			<bp:Action Name="Dp" NextWorkflow="Dp" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -77,6 +78,11 @@
 
 	<bp:Workflow Name="Crash">
 		<bp:Step Name="Crash" Screen="Crash.xml" Controller="Crash.js" />
+	</bp:Workflow>
+	
+	
+	<bp:Workflow Name="Dp">
+		<bp:Step Name="Dp" Screen="Dp.xml" Controller="Empty.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>
