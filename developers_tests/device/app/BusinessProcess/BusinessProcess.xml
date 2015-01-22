@@ -34,7 +34,10 @@
 
 	<bp:Workflow Name="ApplicationCmd">
 		<bp:Step Name="ApplicationCmd" Screen="ApplicationCmd.xml"
-			Controller="ApplicationCmd.js" />
+			Controller="ApplicationCmd.js">
+			<bp:Action Name="Feedback" NextStep="Feedback" />
+		</bp:Step>
+		<bp:Step Name="Feedback" Screen="Feedback.xml" Controller="ApplicationCmd.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="GPSTracking">
@@ -60,15 +63,18 @@
 			<bp:Action Name="Forward" NextStep="ScrollView1" />
 		</bp:Step>
 
-		<bp:Step Name="ScrollView1" Screen="ScrollView.xml" Controller="ScrollView.js">
+		<bp:Step Name="ScrollView1" Screen="ScrollView.xml"
+			Controller="ScrollView.js">
 			<bp:Action Name="Forward" NextStep="ScrollView2" />
 		</bp:Step>
 
-		<bp:Step Name="ScrollView2" Screen="ScrollView.xml" Controller="ScrollView.js">
+		<bp:Step Name="ScrollView2" Screen="ScrollView.xml"
+			Controller="ScrollView.js">
 			<bp:Action Name="Forward" NextStep="ScrollView3" />
 		</bp:Step>
 
-		<bp:Step Name="ScrollView3" Screen="ScrollView.xml" Controller="ScrollView.js"/>
+		<bp:Step Name="ScrollView3" Screen="ScrollView.xml"
+			Controller="ScrollView.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="BarcodeScanner">
@@ -79,8 +85,8 @@
 	<bp:Workflow Name="Crash">
 		<bp:Step Name="Crash" Screen="Crash.xml" Controller="Crash.js" />
 	</bp:Workflow>
-	
-	
+
+
 	<bp:Workflow Name="Dp">
 		<bp:Step Name="Dp" Screen="Dp.xml" Controller="Empty.js" />
 	</bp:Workflow>

@@ -37,3 +37,16 @@ function GetResourceVersion()
 	var ver = Application.ResourceVersion;
 	Dialog.Message(ver);
 }
+
+function SendFeedback(sender, title, text)
+{
+	Application.Feedback(title, text, FeedbackCallback);
+}
+
+function FeedbackCallback(state, args)
+{
+	if (args.Result == true)
+		Dialog.Message("Success!");
+	else
+		Dialog.Message("Error!");
+}

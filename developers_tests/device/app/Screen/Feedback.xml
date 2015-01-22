@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Feedback.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Send feedback"
+			OnClick="$SendFeedback($edtTitle.Text, $memoText.Text)" />
+		<c:EditText Id="edtTitle" Placeholder="Title" />
+		<c:HorizontalLine/>
+		<c:MemoEdit Id="memoText" Placeholder="Text" />
+	</c:VerticalLayout>
+</c:Screen>

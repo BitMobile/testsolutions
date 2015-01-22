@@ -44,6 +44,7 @@ EditText {
 	background-color: #eee;
 	font: 80% arial;
 	padding-top: 10%;
+	placeholder-color: #8b7765;
 }
 
 MemoEdit {
@@ -53,6 +54,7 @@ MemoEdit {
 	background-color: #eee;
 	font: 80% arial;
 	padding-top: 10%;
+	placeholder-color: #8b7765;
 }
 
 CheckBox {
