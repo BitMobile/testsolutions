@@ -1,48 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
-	StyleSheet="HtmlTextView.css">
+	StyleSheet="StyleButton_html.css">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Change text" OnClick="$ChangeText()" OnEvent="Back" />
-		<c:ScrollView>
-			<c:TextView Id="tvTest1" Text="#defaultText#" >
-			</c:TextView>
-			<c:TextView Id="tvTest2"
-				Text="#b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# " />
-			<c:TextView Id="tvTest3" CssClass="center_singleline"
+		<c:ScrollView CssClass="sv_stylist">
+			<c:Button Id="tvTest1" Text="#defaultText#" OnClick="$Empty()">
+			</c:Button>
+			<c:Button Id="tvTest2" OnClick="$Empty()"
+				Text="#b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# #b# Default #i#text#_i#: fp рй.#_b# "/>
+			<c:Button Id="tvTest3" CssClass="center_singleline" OnClick="$Empty()"
 				Text="#b# Center singleline #i#text#_i#: fp рй.#_b# #b# Center singleline #i#text#_i#: fp рй.#_b# #b# Center singleline #i#text#_i#: fp рй.#_b# #b# Center singleline #i#text#_i#: fp рй.#_b# #b# Center singleline #i#text#_i#: fp рй.#_b# #b# Center singleline #i#text#_i#: fp рй.#_b# #b# Center singleline #i#text#_i#: fp рй.#_b# " />
-			<c:TextView Id="tvTest4" CssClass="center_singleline"
-				Text="#b#Center singleline #i#text#_i#: fp рй.#_b#" />
-			<c:TextView Id="tvTest5" CssClass="right_singleline"
+			<c:Button Id="tvTest4" CssClass="center_singleline" OnClick="$Empty()"
+				Text="#b#Center singleline #i#text#_i#: fp рй.#_b#"/>
+			<c:Button Id="tvTest5" CssClass="right_singleline" OnClick="$Empty()"
 				Text="#b#Right singleline #i#text#_i#: fp рй.#_b# #b#Right singleline #i#text#_i#: fp рй.#_b# #b#Right singleline #i#text#_i#: fp рй.#_b# #b#Right singleline #i#text#_i#: fp рй.#_b# #b#Right singleline #i#text#_i#: fp рй.#_b# #b#Right singleline #i#text#_i#: fp рй.#_b# #b#Right singleline #i#text#_i#: fp рй.#_b# " />
-			<c:TextView Id="tvTest6" CssClass="multiline"
+			<c:Button Id="tvTest6" CssClass="multiline" OnClick="$Empty()"
 				Text="#b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# #b#Multilne #i#text#_i#: fp рй.#b# " />
-			<c:TextView Id="tvTest7" CssClass="center_multiline"
+			<c:Button Id="tvTest7" CssClass="center_multiline" OnClick="$Empty()"
 				Text="#b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# #b#Center multilne #i#text#_i#: fp рй.#_b# " />
-			<c:TextView Id="tvTest8" CssClass="center_multiline"
+			<c:Button Id="tvTest8" CssClass="center_multiline" OnClick="$Empty()"
 				Text="#b#Center multilne #i#text#_i#: fp рй.#_b# " />
-			<c:TextView Id="tvTest9" CssClass="right_multiline"
+			<c:Button Id="tvTest9" CssClass="right_multiline" OnClick="$Empty()"
 				Text="#b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# #b#Right multilne #i#text#_i#: fp рй.#_b# " />
-			<c:TextView Id="tvTest10" CssClass="big_font"
+			<c:Button Id="tvTest10" CssClass="big_font" OnClick="$Empty()"
 				Text="#b#Big #i#font#_i#: fp рй.#_b#" />
-			<c:TextView Id="tvTest11" CssClass="half_font"
+			<c:Button Id="tvTest11" CssClass="half_font" OnClick="$Empty()"
 				Text="#b#Half #i#font#_i#: fp рй.#_b#" />
-			<c:TextView Id="tvTest12" CssClass="small_font"
+			<c:Button Id="tvTest12" CssClass="small_font" OnClick="$Empty()"
 				Text="#b#Small #i#font#_i#: fp рй.#_b#" />
-			<c:VerticalLayout OnClick="$Empty()">
-				<c:TextView Id="tvTest13" CssClass="selected_color"
-					Text="#b#Click#i#able#_i#.#_b#" />
-			</c:VerticalLayout>
-			<c:TextView Id="tvTest14" CssClass="singleline_padding"
+			<c:Button Id="tvTest13" CssClass="selected_color" OnClick="$Empty()"
+				Text="#b#Click#i#able#_i#.#_b#" />
+			<c:Button Id="tvTest14" CssClass="singleline_padding" OnClick="$Empty()"
 				Text="#b#Singleline #i#padding:#_i# fp рй.#_b# #b#Singleline #i#padding:#_i# fp рй.#_b# #b#Singleline #i#padding:#_i# fp рй.#_b# #b#Singleline #i#padding:#_i# fp рй.#_b# #b#Singleline #i#padding:#_i# fp рй.#_b# #b#Singleline #i#padding:#_i# fp рй.#_b# #b#Singleline #i#padding:#_i# fp рй.#_b# " />
-			<c:TextView Id="tvTest15" CssClass="singleline_padding"
+			<c:Button Id="tvTest15" CssClass="singleline_padding" OnClick="$Empty()"
 				Text="#b#Singleline #i#padding:#_i# fp рй.#_b#" />
-			<c:TextView Id="tvTest16" CssClass="multilineline_padding"
+			<c:Button Id="tvTest16" CssClass="multilineline_padding" OnClick="$Empty()"
 				Text="#b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# #b#Multiline #i#padding:#_i# fp рй.#_b# " />
-			<c:TextView Id="tvTest17" CssClass="multilineline_padding"
+			<c:Button Id="tvTest17" CssClass="multilineline_padding" OnClick="$Empty()"
 				Text="#b#Multiline #i#padding:#_i# fp рй.#_b#" />
 
-			<!-- <c:TextView CssClass="" Text=""/> -->
+			<!-- <c:Button CssClass="" Text=""/> -->
 
 		</c:ScrollView>
 	</c:VerticalLayout>

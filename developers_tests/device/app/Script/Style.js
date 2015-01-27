@@ -1,8 +1,4 @@
 function Empty() {
-	var data = eval("var text = \"hello!!!\";" +
-			"Dialog.Message(text);" +
-			"return 5 + 10;");
-	Dialog.Message(data);
 }
 
 function ChangeText(){

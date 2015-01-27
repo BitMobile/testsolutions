@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
-	StyleSheet="TextView.css">
+	StyleSheet="StyleTextView.css">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Change text" OnClick="$ChangeText()" OnEvent="Back" />
-		<c:ScrollView>			
+		<c:ScrollView CssClass="sv_stylist">		
 			<c:TextView Id="tvTest1" Text="Default text: fp рй." />
 			<c:TextView Id="tvTest2"
 				Text="Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй." />

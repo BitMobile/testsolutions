@@ -4,8 +4,12 @@
 	<bp:Workflow Name="Main" Controller="Main\Main.js">
 		<bp:Step Name="Menu" Screen="Main.xml">
 			<bp:Action Name="SizeToContent" NextWorkflow="SizeToContent" />
-			<bp:Action Name="TextView" NextWorkflow="TextView" />
-			<bp:Action Name="HtmlTextView" NextWorkflow="HtmlTextView" />
+			<bp:Action Name="StyleTextView" NextWorkflow="StyleTextView" />
+			<bp:Action Name="StyleTextView_html" NextWorkflow="StyleTextView_html" />
+			<bp:Action Name="StyleButton" NextWorkflow="StyleButton" />
+			<bp:Action Name="StyleButton_html" NextWorkflow="StyleButton_html" />
+			<bp:Action Name="StyleTextView_backgroundImage"
+				NextWorkflow="StyleTextView_backgroundImage" />
 			<bp:Action Name="ApplicationCmd" NextWorkflow="ApplicationCmd" />
 			<bp:Action Name="GPSTracking" NextWorkflow="GPSTracking" />
 			<bp:Action Name="EditText_MemoEdit" NextWorkflow="EditText_MemoEdit" />
@@ -23,13 +27,29 @@
 			Controller="SizeToContent.js" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="TextView">
-		<bp:Step Name="TextView" Screen="TextView.xml" Controller="TextView.js" />
+	<bp:Workflow Name="StyleTextView">
+		<bp:Step Name="StyleTextView" Screen="StyleTextView.xml"
+			Controller="Style.js" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="HtmlTextView">
-		<bp:Step Name="HtmlTextView" Screen="HtmlTextView.xml"
-			Controller="TextView.js" />
+	<bp:Workflow Name="StyleTextView_html">
+		<bp:Step Name="StyleTextView_html" Screen="StyleTextView_html.xml"
+			Controller="Style.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="StyleButton">
+		<bp:Step Name="StyleButton" Screen="StyleButton.xml"
+			Controller="Style.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="StyleButton_html">
+		<bp:Step Name="StyleButton_html" Screen="StyleButton_html.xml"
+			Controller="Style.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="StyleTextView_backgroundImage">
+		<bp:Step Name="StyleTextView_backgroundImage" Screen="StyleTextView_backgroundImage.xml"
+			Controller="Empty.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="ApplicationCmd">
@@ -85,7 +105,6 @@
 	<bp:Workflow Name="Crash">
 		<bp:Step Name="Crash" Screen="Crash.xml" Controller="Crash.js" />
 	</bp:Workflow>
-
 
 	<bp:Workflow Name="Dp">
 		<bp:Step Name="Dp" Screen="Dp.xml" Controller="Empty.js" />
