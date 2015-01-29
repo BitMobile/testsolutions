@@ -20,6 +20,7 @@
 			<bp:Action Name="Crash" NextWorkflow="Crash" />
 			<bp:Action Name="Dp" NextWorkflow="Dp" />
 			<bp:Action Name="FileSystem" NextWorkflow="FileSystem" />
+			<bp:Action Name="Email" NextWorkflow="Email" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -113,6 +114,10 @@
 
 	<bp:Workflow Name="FileSystem">
 		<bp:Step Name="FileSystem" Screen="FileSystem.xml" Controller="FileSystem.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="Email">
+		<bp:Step Name="Email" Screen="Email.xml" Controller="Email.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>

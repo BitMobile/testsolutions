@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:EditText Id="edtAddress" Placeholder="Main address"
+			Text="" />
+		<c:EditText Id="edtAddress1" Placeholder="Minor address"
+			Text="" />
+		<c:EditText Id="edtAddress2" Placeholder="Minor address"
+			Text="" />
+		<c:EditText Id="edtSubject" Placeholder="Subject" Text="Test email" />
+		<c:MemoEdit Id="edtText" Placeholder="Text" Text="Hello world!" />
+		<c:EditText Id="edtAttachment" Placeholder="Main attachment"
+			Text="" />
+		<c:EditText Id="edtAttachment1" Placeholder="Minor attachment"
+			Text="" />
+		<c:EditText Id="edtAttachment2" Placeholder="Minor attachment"
+			Text="" />
+		<c:Button Text="Send to main, one attachment" OnClick="$Send()" />
+		<c:Button Text="Send to all, all attachment" OnClick="$SendAll()" />
+		<c:Button Text="Send empty" OnClick="$SendEmpty()" />
+		<c:HorizontalLine />
+	</c:VerticalLayout>
+</c:Screen>

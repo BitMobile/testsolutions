@@ -18,5 +18,6 @@
 		<c:Button Text="Crash" OnClickAction="$DoAction(Crash)" />
 		<c:Button Text="Dp" OnClickAction="$DoAction(Dp)" />
 		<c:Button Text="FileSystem" OnClickAction="$DoAction(FileSystem)" />
+		<c:Button Text="Email" OnClickAction="$DoAction(Email)" />
 	</c:ScrollView>
 </c:Screen>
