@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />		
+		<c:Button Text="Sync" OnClick="$Sync()" />
+		<c:Indicator Id="sync"/>
+		<c:EditText Id="edtInput" Text="/private/" />
+		<c:Button Text="CreateDirectory" OnClick="$CreateDirectory($edtInput.Text)" />
+		<c:Button Text="Delete" OnClick="$Delete($edtInput.Text)" />
+		<c:Button Text="Exists" OnClick="$Exists($edtInput.Text)" />
+		<c:Button Text="Copy to /private/copy.txt" OnClick="$Copy($edtInput.Text)" />
+		<c:Button Text="Dir files" OnClick="$DirFiles($edtInput.Text)" />
+		<c:Button Text="Dir directories" OnClick="$DirFolders($edtInput.Text)" />
+		<c:Button Text="Write file: Hello World!" OnClick="$CreateTextFile($edtInput.Text)" /> 
+		<c:Button Text="Read file" OnClick="$OpenTextFile($edtInput.Text)" />  
+		<c:HorizontalLine />
+	</c:VerticalLayout>
+</c:Screen>

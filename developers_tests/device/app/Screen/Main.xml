@@ -17,5 +17,6 @@
 		<c:Button Text="BarcodeScanner" OnClickAction="$DoAction(BarcodeScanner)" />
 		<c:Button Text="Crash" OnClickAction="$DoAction(Crash)" />
 		<c:Button Text="Dp" OnClickAction="$DoAction(Dp)" />
+		<c:Button Text="FileSystem" OnClickAction="$DoAction(FileSystem)" />
 	</c:ScrollView>
 </c:Screen>
