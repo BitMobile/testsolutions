@@ -20,5 +20,6 @@
 		<c:Button Text="FileSystem" OnClickAction="$DoAction(FileSystem)" />
 		<c:Button Text="Email" OnClickAction="$DoAction(Email)" />
 		<c:Button Text="Camera And Gallery" OnClickAction="$DoAction(CameraAndGallery)" />
+		<c:Button Text="Database" OnClickAction="$DoAction(Database)" />
 	</c:ScrollView>
 </c:Screen>

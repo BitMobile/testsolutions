@@ -22,6 +22,7 @@
 			<bp:Action Name="FileSystem" NextWorkflow="FileSystem" />
 			<bp:Action Name="Email" NextWorkflow="Email" />
 			<bp:Action Name="CameraAndGallery" NextWorkflow="CameraAndGallery" />
+			<bp:Action Name="Database" NextWorkflow="Database" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -123,6 +124,10 @@
 	
 	<bp:Workflow Name="CameraAndGallery">
 		<bp:Step Name="CameraAndGallery" Screen="CameraAndGallery.xml" Controller="CameraAndGallery.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="Database">
+		<bp:Step Name="Database" Screen="Database.xml" Controller="Database.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>
