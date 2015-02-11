@@ -1,13 +1,27 @@
-function Show(sender, path) {
+function Ask(sender, path) {
 	Dialog.Ask("Gallery?", GalleryCallback, path, CameraCallback, path);
 }
 
-function GalleryCallback(state, args) {
-	Gallery.Size = 300;
-	Gallery.Copy(state);
+function Choose(sender, path){
+	var items = [[1, "Gallery"],[2, "Camera"]];
+	Dialog.Choose("Choose your destiny!", items, CallbackChoose, path);	
 }
 
-function CameraCallback(state, args) {
-	Camera.Size = 300;
-	Camera.MakeSnapshot(state);
+function CallbackChoose(path, args){
+	if (args.Result == 1){
+		GalleryCallback(path);
+	}	
+	else if(args.Result == 2){
+		CameraCallback(path);
+	}
+}
+
+function GalleryCallback(path) {
+	Gallery.Size = 300;	
+	Gallery.Copy(path, DoRefresh);	
+}
+
+function CameraCallback(path) {
+	Camera.Size = 300;	
+	Camera.MakeSnapshot(path, DoRefresh);	
 }

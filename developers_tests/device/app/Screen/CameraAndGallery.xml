@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<s:Push Id="path" Value="/private/text.jpg"/>
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:EditText Id="edtPath" Text="/private/text.jpg"/>
-		<c:Button Text="Show" OnClick="$Show($edtPath.Text)" />		
+		<c:TextView Text="$path"/>
+		<c:Button Text="Ask" OnClick="$Ask($path)" />
+		<c:Button Text="Choose" OnClick="$Choose($path)" />
+		<c:Image Source="$path"/>		
 	</c:VerticalLayout>
 </c:Screen>

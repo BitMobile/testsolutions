@@ -74,6 +74,11 @@ Button {
 	selected-color: #09f;
 }
 
+img{
+	width: 100%;
+	height: 0%;
+}
+
 line {
 	height: 1px;
 	width: 100%;
