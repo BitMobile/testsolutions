@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<s:Push Id="currentTable" Value="$param1"/>
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="Rollback" OnClick="$DoRollback()"/>
+		<c:Button Text="Commit" OnClick="$DoCommit()" />
+		<c:HorizontalLine />		
+		<c:EditText Id="edtTableName" Placeholder="Table name" Text="$currentTable"/>
+		<c:Button Text="Create table" OnClick="$CreateUserTable($edtTableName.Text)" />
+		<c:Button Text="Clear table" OnClick="$ClearUserTable($edtTableName.Text)" />
+		<c:Button Text="Drop table" OnClick="$DropUserTable($edtTableName.Text)" />
+		<c:HorizontalLine />
+		<c:EditText Id="edtText" Placeholder="Text"/>
+		<c:Button Text="Insert" OnClick="$InsertUserTable($edtTableName.Text, $edtText.Text)" />		
+		<c:ScrollView>
+			<s:Iterator Id="items" Value="$SelectUserTable($edtTableName.Text)">
+				<c:TextView Text="$items.Text" />
+			</s:Iterator>
+		</c:ScrollView>
+
+	</c:VerticalLayout>
+</c:Screen>

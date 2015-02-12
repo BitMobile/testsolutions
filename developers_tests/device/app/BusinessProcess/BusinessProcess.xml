@@ -121,13 +121,19 @@
 	<bp:Workflow Name="Email">
 		<bp:Step Name="Email" Screen="Email.xml" Controller="Email.js" />
 	</bp:Workflow>
-	
+
 	<bp:Workflow Name="CameraAndGallery">
-		<bp:Step Name="CameraAndGallery" Screen="CameraAndGallery.xml" Controller="CameraAndGallery.js" />
+		<bp:Step Name="CameraAndGallery" Screen="CameraAndGallery.xml"
+			Controller="CameraAndGallery.js" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="Database">
-		<bp:Step Name="Database" Screen="Database.xml" Controller="Database.js" />
+	<bp:Workflow Name="Database"  Controller="Database.js">
+		<bp:Step Name="Database" Screen="Database.xml">
+			<bp:Action Name="DeleteEntity" NextStep="DeleteEntity" />
+			<bp:Action Name="TemoraryTables" NextStep="TemoraryTables" />
+		</bp:Step>
+		<bp:Step Name="DeleteEntity" Screen="Database_Delete.xml"/>
+		<bp:Step Name="TemoraryTables" Screen="Database_TemporaryTables.xml"/>
 	</bp:Workflow>
 
 </bp:BusinessProcess>

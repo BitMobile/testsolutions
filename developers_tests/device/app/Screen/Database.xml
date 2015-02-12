@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
-	<c:VerticalLayout>
-		<c:Button Text="Rollback" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:Button Text="Commit" OnClick="$DoCommit()" />
-		<c:HorizontalLine />
-		
-		<c:Button Text="Create" OnClick="$Create()" />
-		<c:Button Text="Delete last" OnClick="$DeleteLast()" />
-
-		<c:ScrollView>
-			<s:Iterator Id="items" Value="$Select()">
-				<c:TextView Text="$items.Id" />
-			</s:Iterator>
-		</c:ScrollView>
-
-	</c:VerticalLayout>
+	<c:ScrollView>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Delete entity out of transaction" OnClickAction="$DoAction(DeleteEntity)" />
+		<c:Button Text="Temorary tables" OnClickAction="$DoAction(TemoraryTables)" />
+	</c:ScrollView>
 </c:Screen>
