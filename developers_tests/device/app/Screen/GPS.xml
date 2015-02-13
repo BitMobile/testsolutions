@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Start" OnClick="$Start()" />
+		<c:Button Text="Stop" OnClick="$Stop()" />
+		<c:TextView Id="tvStatus" Text="Disabled"/>
+		<c:Button Text="Show" OnClick="$Show()" />
+		<c:Button Text="Update" OnClick="$Update()" />
+	</c:VerticalLayout>
+</c:Screen>

@@ -12,6 +12,7 @@
 				NextWorkflow="StyleTextView_backgroundImage" />
 			<bp:Action Name="ApplicationCmd" NextWorkflow="ApplicationCmd" />
 			<bp:Action Name="GPSTracking" NextWorkflow="GPSTracking" />
+			<bp:Action Name="GPS" NextWorkflow="GPS" />
 			<bp:Action Name="EditText_MemoEdit" NextWorkflow="EditText_MemoEdit" />
 			<bp:Action Name="Clipboard" NextWorkflow="Clipboard" />
 			<bp:Action Name="Debug" NextWorkflow="Debug" />
@@ -22,7 +23,7 @@
 			<bp:Action Name="FileSystem" NextWorkflow="FileSystem" />
 			<bp:Action Name="Email" NextWorkflow="Email" />
 			<bp:Action Name="CameraAndGallery" NextWorkflow="CameraAndGallery" />
-			<bp:Action Name="Database" NextWorkflow="Database" />
+			<bp:Action Name="Database" NextWorkflow="Database" />			
 		</bp:Step>
 	</bp:Workflow>
 
@@ -62,6 +63,11 @@
 			<bp:Action Name="Feedback" NextStep="Feedback" />
 		</bp:Step>
 		<bp:Step Name="Feedback" Screen="Feedback.xml" Controller="ApplicationCmd.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="GPS">
+		<bp:Step Name="GPS" Screen="GPS.xml"
+			Controller="GPS.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="GPSTracking">
@@ -127,13 +133,13 @@
 			Controller="CameraAndGallery.js" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="Database"  Controller="Database.js">
+	<bp:Workflow Name="Database" Controller="Database.js">
 		<bp:Step Name="Database" Screen="Database.xml">
 			<bp:Action Name="DeleteEntity" NextStep="DeleteEntity" />
 			<bp:Action Name="TemoraryTables" NextStep="TemoraryTables" />
 		</bp:Step>
-		<bp:Step Name="DeleteEntity" Screen="Database_Delete.xml"/>
-		<bp:Step Name="TemoraryTables" Screen="Database_TemporaryTables.xml"/>
+		<bp:Step Name="DeleteEntity" Screen="Database_Delete.xml" />
+		<bp:Step Name="TemoraryTables" Screen="Database_TemporaryTables.xml" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>
