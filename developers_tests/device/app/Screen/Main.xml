@@ -22,5 +22,6 @@
 		<c:Button Text="Email" OnClickAction="$DoAction(Email)" />
 		<c:Button Text="Camera And Gallery" OnClickAction="$DoAction(CameraAndGallery)" />
 		<c:Button Text="Database" OnClickAction="$DoAction(Database)" />
+		<c:Button Text="Client Model" OnClickAction="$DoAction(ClientModel)" />		
 	</c:ScrollView>
 </c:Screen>

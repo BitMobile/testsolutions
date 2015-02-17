@@ -23,7 +23,8 @@
 			<bp:Action Name="FileSystem" NextWorkflow="FileSystem" />
 			<bp:Action Name="Email" NextWorkflow="Email" />
 			<bp:Action Name="CameraAndGallery" NextWorkflow="CameraAndGallery" />
-			<bp:Action Name="Database" NextWorkflow="Database" />			
+			<bp:Action Name="Database" NextWorkflow="Database" />
+			<bp:Action Name="ClientModel" NextWorkflow="ClientModel" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -66,8 +67,7 @@
 	</bp:Workflow>
 
 	<bp:Workflow Name="GPS">
-		<bp:Step Name="GPS" Screen="GPS.xml"
-			Controller="GPS.js" />
+		<bp:Step Name="GPS" Screen="GPS.xml" Controller="GPS.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="GPSTracking">
@@ -140,6 +140,13 @@
 		</bp:Step>
 		<bp:Step Name="DeleteEntity" Screen="Database_Delete.xml" />
 		<bp:Step Name="TemoraryTables" Screen="Database_TemporaryTables.xml" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="ClientModel" Controller="ClientModel.js">
+		<bp:Step Name="ClientModel" Screen="ClientModel.xml">
+			<bp:Action Name="Dialog" NextStep="Dialog" />
+		</bp:Step>
+		<bp:Step Name="Dialog" Screen="ClientModel_Dialog.xml" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>
