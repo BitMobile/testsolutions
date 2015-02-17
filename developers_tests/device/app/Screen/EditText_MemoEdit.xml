@@ -4,8 +4,9 @@
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Set focus to EditText" OnClick="$SetFocus($edtEditText)" />
 		<c:Button Text="Set focus to MemoEdit" OnClick="$SetFocus($edtMemoEdit)" />
+		<c:Button Text="Enable or Disable" OnClick="$EnableDisable()"/>
 		<c:TextView Id="txtCurrent" Text="" />
-
+		
 		<c:ScrollView>
 			<c:HorizontalLine />
 

@@ -11,3 +11,8 @@ function OnLostFocus(sender, txt) {
 	txt.Text = sender.Text;
 	$.txtCurrent.Text = "";
 }
+
+function EnableDisable(sender, editText, memoEdit){	
+	$.edtEditText.Enabled = !$.edtEditText.Enabled;
+	$.edtMemoEdit.Enabled = !$.edtMemoEdit.Enabled;
+}
