@@ -1,0 +1,70 @@
+Button {
+	height: 8%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+Image {
+	margin-left: 10%;
+	margin-top: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+}
+
+SwipeHorizontalLayout {
+	height: 45%;
+}
+
+SwipeHorizontalLayout Image {
+	height: 100%;
+	width: 0%;
+}
+
+SwipeVerticalLayout {
+	height: 45%;
+}
+
+SwipeVerticalLayout Image {
+	height: 0%;
+	width: 100%;
+}
+
+.cat0 {
+	background-image: url(cat0.jpg);
+}
+
+.cat1 {
+	background-image: url(cat1.jpg);
+}
+
+.cat2 {
+	background-image: url(cat2.jpg);
+}
+
+.cat3 {
+	background-image: url(cat3.jpg);
+}
+
+.cat4 {
+	background-image: url(cat4.jpg);
+}
+
+.cat5 {
+	background-image: url(cat5.jpg);
+}
+
+.cat6 {
+	background-image: url(cat6.jpg);
+}
+
+.cat7 {
+	background-image: url(cat7.jpg);
+}
+
+.cat8 {
+	background-image: url(cat8.jpg);
+}
+
+.cat9 {
+	background-image: url(cat9.jpg);
+}

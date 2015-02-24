@@ -10,6 +10,7 @@
 		<c:Button Text="Clipboard" OnClickAction="$DoAction(Clipboard)" />
 		<c:Button Text="Debug" OnClickAction="$DoAction(Debug)" />
 		<c:Button Text="ScrollView" OnClickAction="$DoAction(ScrollView)" />
+		<c:Button Text="SwipeLayout: center align" OnClickAction="$DoAction(SwipeLayout)" />
 		<c:Button Text="BarcodeScanner" OnClickAction="$DoAction(BarcodeScanner)" />
 		<c:Button Text="Crash" OnClickAction="$DoAction(Crash)" />
 		<c:Button Text="Dp" OnClickAction="$DoAction(Dp)" />
@@ -17,6 +18,6 @@
 		<c:Button Text="Email" OnClickAction="$DoAction(Email)" />
 		<c:Button Text="Camera And Gallery" OnClickAction="$DoAction(CameraAndGallery)" />
 		<c:Button Text="Database" OnClickAction="$DoAction(Database)" />
-		<c:Button Text="Client Model" OnClickAction="$DoAction(ClientModel)" />		
+		<c:Button Text="Client Model" OnClickAction="$DoAction(ClientModel)" />
 	</c:ScrollView>
 </c:Screen>

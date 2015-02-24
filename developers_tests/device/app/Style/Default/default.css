@@ -91,6 +91,16 @@ Indicator {
 	width: 10mm;
 }
 
+SwipeHorizontalLayout {
+	width: 100%;
+	height: 100%;
+}
+
+SwipeVerticalLayout {
+	width: 100%;
+	height: 100%;
+}
+
 .sv_stylist vl {
 	width: 100%;
 	height: 4mm;

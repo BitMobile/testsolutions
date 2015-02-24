@@ -12,6 +12,7 @@
 			<bp:Action Name="Clipboard" NextWorkflow="Clipboard" />
 			<bp:Action Name="Debug" NextWorkflow="Debug" />
 			<bp:Action Name="ScrollView" NextWorkflow="ScrollView" />
+			<bp:Action Name="SwipeLayout" NextWorkflow="SwipeLayout" />
 			<bp:Action Name="BarcodeScanner" NextWorkflow="BarcodeScanner" />
 			<bp:Action Name="Crash" NextWorkflow="Crash" />
 			<bp:Action Name="Dp" NextWorkflow="Dp" />
@@ -90,6 +91,10 @@
 
 		<bp:Step Name="ScrollView3" Screen="ScrollView.xml"
 			Controller="ScrollView.js" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="SwipeLayout" Controller="Empty.js">
+		<bp:Step Name="CenterAlign" Screen="SwipeLayout_CenterAlign.xml"></bp:Step>
 	</bp:Workflow>
 
 	<bp:Workflow Name="BarcodeScanner">
