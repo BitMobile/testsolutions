@@ -2,7 +2,7 @@
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
 	StyleSheet="StyleTextView_html.css">
 	<c:VerticalLayout>
-		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
 		<c:Button Text="Change text" OnClick="$ChangeText()" OnEvent="Back" />
 		<c:ScrollView CssClass="sv_stylist">
 			<c:TextView Id="tvTest1" Text="#defaultText#" >

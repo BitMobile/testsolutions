@@ -4,12 +4,7 @@
 	<bp:Workflow Name="Main" Controller="Main\Main.js">
 		<bp:Step Name="Menu" Screen="Main.xml">
 			<bp:Action Name="SizeToContent" NextWorkflow="SizeToContent" />
-			<bp:Action Name="StyleTextView" NextWorkflow="StyleTextView" />
-			<bp:Action Name="StyleTextView_html" NextWorkflow="StyleTextView_html" />
-			<bp:Action Name="StyleButton" NextWorkflow="StyleButton" />
-			<bp:Action Name="StyleButton_html" NextWorkflow="StyleButton_html" />
-			<bp:Action Name="StyleTextView_backgroundImage"
-				NextWorkflow="StyleTextView_backgroundImage" />
+			<bp:Action Name="StyleText" NextWorkflow="StyleText" />
 			<bp:Action Name="ApplicationCmd" NextWorkflow="ApplicationCmd" />
 			<bp:Action Name="GPSTracking" NextWorkflow="GPSTracking" />
 			<bp:Action Name="GPS" NextWorkflow="GPS" />
@@ -33,29 +28,19 @@
 			Controller="SizeToContent.js" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="StyleTextView">
-		<bp:Step Name="StyleTextView" Screen="StyleTextView.xml"
-			Controller="Style.js" />
-	</bp:Workflow>
-
-	<bp:Workflow Name="StyleTextView_html">
-		<bp:Step Name="StyleTextView_html" Screen="StyleTextView_html.xml"
-			Controller="Style.js" />
-	</bp:Workflow>
-
-	<bp:Workflow Name="StyleButton">
-		<bp:Step Name="StyleButton" Screen="StyleButton.xml"
-			Controller="Style.js" />
-	</bp:Workflow>
-
-	<bp:Workflow Name="StyleButton_html">
-		<bp:Step Name="StyleButton_html" Screen="StyleButton_html.xml"
-			Controller="Style.js" />
-	</bp:Workflow>
-
-	<bp:Workflow Name="StyleTextView_backgroundImage">
-		<bp:Step Name="StyleTextView_backgroundImage" Screen="StyleTextView_backgroundImage.xml"
-			Controller="Empty.js" />
+	<bp:Workflow Name="StyleText" Controller="Style.js">
+		<bp:Step Name="StyleText" Screen="StyleText.xml">
+			<bp:Action Name="TextView" NextStep="TextView" />
+			<bp:Action Name="TextView_html" NextStep="TextView_html" />
+			<bp:Action Name="Button" NextStep="Button" />
+			<bp:Action Name="Button_html" NextStep="Button_html" />
+			<bp:Action Name="TextView_backgroundImage" NextStep="TextView_backgroundImage" />
+		</bp:Step>
+		<bp:Step Name="TextView" Screen="StyleText_TextView.xml" />
+		<bp:Step Name="TextView_html" Screen="StyleText_TextView_html.xml" />
+		<bp:Step Name="TextView_backgroundImage" Screen="StyleText_TextView_backgroundImage.xml" />
+		<bp:Step Name="Button" Screen="StyleText_Button.xml" />
+		<bp:Step Name="Button_html" Screen="StyleText_Button_html.xml" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="ApplicationCmd">
