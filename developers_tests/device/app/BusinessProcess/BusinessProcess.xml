@@ -93,7 +93,7 @@
 			Controller="ScrollView.js" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="SwipeLayout" Controller="Empty.js">
+	<bp:Workflow Name="SwipeLayout" Controller="SwipeLayout.js">
 		<bp:Step Name="CenterAlign" Screen="SwipeLayout_CenterAlign.xml"></bp:Step>
 	</bp:Workflow>
 
