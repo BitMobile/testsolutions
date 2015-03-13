@@ -21,6 +21,7 @@
 			<bp:Action Name="CameraAndGallery" NextWorkflow="CameraAndGallery" />
 			<bp:Action Name="Database" NextWorkflow="Database" />
 			<bp:Action Name="ClientModel" NextWorkflow="ClientModel" />
+			<bp:Action Name="Validation" NextWorkflow="Validation" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -137,6 +138,10 @@
 			<bp:Action Name="Dialog" NextStep="Dialog" />
 		</bp:Step>
 		<bp:Step Name="Dialog" Screen="ClientModel_Dialog.xml" />
+	</bp:Workflow>
+
+	<bp:Workflow Name="Validation" Controller="Validation.js">
+		<bp:Step Name="Validation" Screen="Validation.xml"></bp:Step>
 	</bp:Workflow>
 
 </bp:BusinessProcess>

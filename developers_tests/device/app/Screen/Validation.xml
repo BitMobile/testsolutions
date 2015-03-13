@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Validation.css">
+	<c:VerticalLayout>
+		<c:EditText Id="edtId" Placeholder="Id" Required="true"
+			Length="8" Mask="^\w+$" />
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:HorizontalLine />
+		<c:Button Text="Submit all" SubmitScope="all" OnClick="$Submit(all)" />
+		<c:HorizontalLine />
+		<c:Button Text="Submit name" SubmitScope="edtLogin;edtName"
+			OnClick="$Submit(name)" />
+		<c:EditText Id="edtLogin" Placeholder="Login" Required="true"
+			Length="8" Mask="^\w+$" />
+		<c:EditText Id="edtName" Placeholder="Second Name" Length="8"
+			Mask="^(\D\w)*$" />
+		<c:HorizontalLine />
+		<c:Button Text="Submit contacts" SubmitScope="edtPhone;edtAddress;addressDetails;contacts"
+			OnClick="$Submit(contacts)" />
+		<c:EditText Id="edtPhone" Placeholder="Phone number"
+			Required="true" Mask="#phone_regexp#" />
+		<c:MemoEdit Id="edtAddress" Placeholder="Address" Length="16" />
+		<c:HorizontalLayout Id="addressDetails" CssClass="sector">
+			<c:EditText Placeholder="Index" Length="6" Mask="^\d*$" />
+			<c:EditText Placeholder="Post code" Length="3" />
+			<c:MemoEdit Placeholder="Address comment" Length="8" />
+		</c:HorizontalLayout>
+		<c:ScrollView Id="contacts">
+			<c:EditText Placeholder="Email" Mask="#email_regexp#" />
+			<c:HorizontalLayout CssClass="sector">
+				<c:EditText Placeholder="Email index" Length="6" Mask="^\d*$" />
+				<c:EditText Placeholder="Email code" Length="3" />
+				<c:MemoEdit Placeholder="Email comment" Length="8" />
+			</c:HorizontalLayout>
+			<c:MemoEdit Placeholder="Description" Length="16"
+				CssClass="big" Mask="\A^\D*\Z" />
+			<c:VerticalLayout CssClass="big"></c:VerticalLayout>			
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

@@ -1,0 +1,24 @@
+.big {
+	height: 50%;
+	font: 4mm arial;
+	padding-top: 0.5mm;
+}
+
+.sector {
+	height: 20sp;
+}
+
+.sector EditText {
+	width: 25%;
+}
+
+.sector MemoEdit {
+	width: 50%;
+	height: 100%;
+	font: 4mm arial;
+}
+
+.small_size {
+	width: 50%;
+	padding-top: 0%;
+}
