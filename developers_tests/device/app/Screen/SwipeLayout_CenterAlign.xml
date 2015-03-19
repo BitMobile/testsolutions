@@ -4,30 +4,8 @@
 	<s:Push Id="alignment" Value="$Default($param1,Center)"/>
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
-		<c:Button Text="Change alignment" OnClick="$ChangeAlignment($alignment)"/>
-		<c:SwipeHorizontalLayout Alignment="$alignment">
-			<c:Image CssClass="cat3" />
-			<c:Image CssClass="cat0" />
-			<c:Image CssClass="cat1" />
-			<c:Image CssClass="cat2" />			
-			<c:Image CssClass="cat4" />
-			<c:Image CssClass="cat5" />
-			<c:Image CssClass="cat6" />			
-			<c:Image CssClass="cat7" />
-			<c:Image CssClass="cat8" />
-			<c:Image CssClass="cat9" />
-		</c:SwipeHorizontalLayout>
-		<c:SwipeVerticalLayout Alignment="$alignment">
-			<c:Image CssClass="cat2" />
-			<c:Image CssClass="cat0" />
-			<c:Image CssClass="cat1" />
-			<c:Image CssClass="cat3" />
-			<c:Image CssClass="cat5" />
-			<c:Image CssClass="cat6" />
-			<c:Image CssClass="cat7" />			
-			<c:Image CssClass="cat8" />
-			<c:Image CssClass="cat9" />
-			<c:Image CssClass="cat4" />
-		</c:SwipeVerticalLayout>
+		<c:Button Text="Horizontal SwipeLAyout" OnClickAction="$DoAction(Horizontal_SwipeLAyout)"/>
+		<c:Button Text="Vertical SwipeLAyout" OnClickAction="$DoAction(Vertical_SwipeLAyout)"/>
+		
 	</c:VerticalLayout>
 </c:Screen>
