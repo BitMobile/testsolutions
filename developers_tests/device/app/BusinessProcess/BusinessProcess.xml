@@ -31,18 +31,18 @@
 	</bp:Workflow>
 
 	<bp:Workflow Name="StyleText" Controller="Style.js">
-		<bp:Step Name="StyleText" Screen="StyleText.xml">
+		<bp:Step Name="StyleText" Screen="Style\StyleText.xml">
 			<bp:Action Name="TextView" NextStep="TextView" />
 			<bp:Action Name="TextView_html" NextStep="TextView_html" />
 			<bp:Action Name="Button" NextStep="Button" />
 			<bp:Action Name="Button_html" NextStep="Button_html" />
 			<bp:Action Name="TextView_backgroundImage" NextStep="TextView_backgroundImage" />
 		</bp:Step>
-		<bp:Step Name="TextView" Screen="StyleText_TextView.xml" />
-		<bp:Step Name="TextView_html" Screen="StyleText_TextView_html.xml" />
-		<bp:Step Name="TextView_backgroundImage" Screen="StyleText_TextView_backgroundImage.xml" />
-		<bp:Step Name="Button" Screen="StyleText_Button.xml" />
-		<bp:Step Name="Button_html" Screen="StyleText_Button_html.xml" />
+		<bp:Step Name="TextView" Screen="Style\StyleText_TextView.xml" />
+		<bp:Step Name="TextView_html" Screen="Style\StyleText_TextView_html.xml" />
+		<bp:Step Name="TextView_backgroundImage" Screen="Style\StyleText_TextView_backgroundImage.xml" />
+		<bp:Step Name="Button" Screen="Style\StyleText_Button.xml" />
+		<bp:Step Name="Button_html" Screen="Style\StyleText_Button_html.xml" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="ApplicationCmd">
@@ -95,9 +95,9 @@
 	</bp:Workflow>
 
 	<bp:Workflow Name="SwipeLayout" Controller="SwipeLayout.js">
-		<bp:Step Name="CenterAlign" Screen="SwipeLayout_CenterAlign.xml">
-		<bp:Action Name="Horizontal_SwipeLAyout" NextStep="Horizontal_SwipeLAyout"></bp:Action>
-		<bp:Action Name="Vertical_SwipeLAyout" NextStep="Vertical_SwipeLAyout"></bp:Action>
+		<bp:Step Name="CenterAlign" Screen="SwipeLayout\SwipeLayout_CenterAlign.xml">
+		<bp:Action Name="Horizontal_SwipeLAyout" NextStep="SwipeLayout\Horizontal_SwipeLAyout"></bp:Action>
+		<bp:Action Name="Vertical_SwipeLAyout" NextStep="SwipeLayout\Vertical_SwipeLAyout"></bp:Action>
 		</bp:Step>
 		<bp:Step Name="Horizontal_SwipeLAyout" Screen="SwipeLayout_CenterAlign_H.xml"></bp:Step>
 		<bp:Step Name="Vertical_SwipeLAyout" Screen="SwipeLayout_CenterAlign_V.xml"></bp:Step>
