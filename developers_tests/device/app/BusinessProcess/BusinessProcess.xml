@@ -96,11 +96,11 @@
 
 	<bp:Workflow Name="SwipeLayout" Controller="SwipeLayout.js">
 		<bp:Step Name="CenterAlign" Screen="SwipeLayout\SwipeLayout_CenterAlign.xml">
-		<bp:Action Name="Horizontal_SwipeLAyout" NextStep="SwipeLayout\Horizontal_SwipeLAyout"></bp:Action>
-		<bp:Action Name="Vertical_SwipeLAyout" NextStep="SwipeLayout\Vertical_SwipeLAyout"></bp:Action>
+		<bp:Action Name="Horizontal_SwipeLAyout" NextStep="Horizontal_SwipeLAyout"></bp:Action>
+		<bp:Action Name="Vertical_SwipeLAyout" NextStep="Vertical_SwipeLAyout"></bp:Action>
 		</bp:Step>
-		<bp:Step Name="Horizontal_SwipeLAyout" Screen="SwipeLayout_CenterAlign_H.xml"></bp:Step>
-		<bp:Step Name="Vertical_SwipeLAyout" Screen="SwipeLayout_CenterAlign_V.xml"></bp:Step>
+		<bp:Step Name="Horizontal_SwipeLAyout" Screen="SwipeLayout\SwipeLayout_CenterAlign_H.xml"></bp:Step>
+		<bp:Step Name="Vertical_SwipeLAyout" Screen="SwipeLayout\SwipeLayout_CenterAlign_V.xml"></bp:Step>
 	</bp:Workflow>
 
 	<bp:Workflow Name="BarcodeScanner">
