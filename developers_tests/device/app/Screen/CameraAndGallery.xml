@@ -4,6 +4,7 @@
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:TextView Text="$path"/>
+		<c:EditText Id="size" Text="0" Placeholder="Size" Keyboard="numeric"/>
 		<c:Button Text="Ask" OnClick="$Ask($path)" />
 		<c:Button Text="Choose" OnClick="$Choose($path)" />
 		<c:Image Source="$path"/>		

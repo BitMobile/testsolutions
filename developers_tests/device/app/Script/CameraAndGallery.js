@@ -17,11 +17,11 @@ function CallbackChoose(path, args){
 }
 
 function GalleryCallback(path) {
-	Gallery.Size = 300;	
+	Gallery.Size = Number($.size.Text);	
 	Gallery.Copy(path, DoRefresh);	
 }
 
 function CameraCallback(path) {
-	Camera.Size = 300;	
+	Camera.Size = Number($.size.Text);	
 	Camera.MakeSnapshot(path, DoRefresh);	
 }
