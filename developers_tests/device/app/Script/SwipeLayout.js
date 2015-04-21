@@ -6,3 +6,7 @@ function ChangeAlignment(sender, alignment){
 	
 	DoRefresh(newAlignment);	
 }
+
+function SwipeTo(sender, index){
+	$.swipeLayout.Index = Number(index);
+}

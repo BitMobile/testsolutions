@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
 	StyleSheet="swipe_layout.css">
-	<s:Push Id="alignment" Value="$Default($param1,Center)"/>
+	<s:Push Id="alignment" Value="$Default($param1,Center)" />
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
-		<c:Button Text= "Disable/Enable center alignment" OnClick="$ChangeAlignment($alignment)"/>
-		<c:SwipeHorizontalLayout Alignment="$alignment">
+		<c:Button Text="Disable/Enable center alignment" OnClick="$ChangeAlignment($alignment)" />
+		<c:HorizontalLayout>
+			<c:Button Text="Swipe to" OnClick="$SwipeTo($index.Text)" />
+			<c:EditText Id="index" Text="0" Placeholder="Index"
+				Keyboard="numeric" />
+		</c:HorizontalLayout>
+
+		<c:SwipeHorizontalLayout Id="swipeLayout"
+			Alignment="$alignment">
 			<c:Image CssClass="cat3" />
-			
-		</c:SwipeHorizontalLayout>
-		<c:SwipeHorizontalLayout Alignment="$alignment">
 			<c:Image CssClass="cat2" />
 			<c:Image CssClass="cat0" />
-			<c:Image CssClass="cat1" />
-			<c:Image CssClass="cat3" />
-			<c:Image CssClass="cat5" />
+			<c:Image CssClass="cat1" />			
 			<c:Image CssClass="cat6" />
-			<c:Image CssClass="cat7" />			
+			<c:Image CssClass="cat7" />
 			<c:Image CssClass="cat8" />
 			<c:Image CssClass="cat9" />
 			<c:Image CssClass="cat4" />
+			<c:Image CssClass="cat5" />
+		</c:SwipeHorizontalLayout>
+
+		<c:SwipeHorizontalLayout Alignment="$alignment">
+			<c:Image CssClass="cat3" />
 		</c:SwipeHorizontalLayout>
 	</c:VerticalLayout>
 </c:Screen>

@@ -1,8 +1,3 @@
-Button {
-	height: 4%;	
-	margin-bottom: 1%;
-}
-
 Image {
 	margin-left: 10%;
 	margin-top: 10%;
@@ -11,7 +6,7 @@ Image {
 }
 
 SwipeHorizontalLayout {
-	height: 45%;
+	height: 50%;
 }
 
 SwipeHorizontalLayout Image {
@@ -20,12 +15,30 @@ SwipeHorizontalLayout Image {
 }
 
 SwipeVerticalLayout {
-	height: 45%;
+	height: 50%;
 }
 
 SwipeVerticalLayout Image {
 	height: 0%;
 	width: 100%;
+}
+
+hl {
+	height: 5mm;
+}
+
+hl Button {
+	width: 50%;
+	height: 100%;	
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
+
+hl EditText {
+	width: 50%;
+	height: 100%;
+	margin-top: 0%;
+	margin-bottom: 0%;
 }
 
 .cat0 {
