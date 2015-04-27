@@ -1,6 +1,7 @@
 hl {
 	width: 100%;
 	height: 8mm;
+	background-color: #0c0;
 }
 
 TextView{
@@ -10,7 +11,7 @@ TextView{
 	margin-right: 1px;
 	color: #000;
 	background-color: #eef;
-	font: 2sp arial;
+	font: 2sp arial;	
 }
 
 MemoEdit{
@@ -25,6 +26,15 @@ MemoEdit{
 	width: 50%;		
 	height: 10% auto;
 	white-space: normal;
+}
+
+.layout-with-image{
+	height: 32mm;
+}
+
+.with-image{
+	width: 0% auto;
+	background-image: url(cat3.jpg);
 }
 
 sv vl {

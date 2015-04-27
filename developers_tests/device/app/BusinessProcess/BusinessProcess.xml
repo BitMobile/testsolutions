@@ -22,12 +22,16 @@
 			<bp:Action Name="Database" NextWorkflow="Database" />
 			<bp:Action Name="ClientModel" NextWorkflow="ClientModel" />
 			<bp:Action Name="Validation" NextWorkflow="Validation" />
+			<bp:Action Name="ScriptEngine" NextWorkflow="ScriptEngine" />
 		</bp:Step>
 	</bp:Workflow>
 
-	<bp:Workflow Name="SizeToContent">
-		<bp:Step Name="SizeToContent" Screen="SizeToContent.xml"
-			Controller="SizeToContent.js" />
+	<bp:Workflow Name="SizeToContent" Controller="SizeToContent.js">
+		<bp:Step Name="SizeToContent" Screen="SizeToContent.xml">
+			<bp:Action Name="TextView" NextStep="TextView" />
+			<bp:Action Name="Button" NextStep="Button" />
+		</bp:Step>		
+		<bp:Step Name="TextView" Screen="SizeToContent_TextView.xml"/>	
 	</bp:Workflow>
 
 	<bp:Workflow Name="StyleText" Controller="Style.js">
@@ -96,8 +100,8 @@
 
 	<bp:Workflow Name="SwipeLayout" Controller="SwipeLayout.js">
 		<bp:Step Name="CenterAlign" Screen="SwipeLayout\SwipeLayout_CenterAlign.xml">
-		<bp:Action Name="Horizontal_SwipeLAyout" NextStep="Horizontal_SwipeLAyout"></bp:Action>
-		<bp:Action Name="Vertical_SwipeLAyout" NextStep="Vertical_SwipeLAyout"></bp:Action>
+			<bp:Action Name="Horizontal_SwipeLAyout" NextStep="Horizontal_SwipeLAyout"></bp:Action>
+			<bp:Action Name="Vertical_SwipeLAyout" NextStep="Vertical_SwipeLAyout"></bp:Action>
 		</bp:Step>
 		<bp:Step Name="Horizontal_SwipeLAyout" Screen="SwipeLayout\SwipeLayout_CenterAlign_H.xml"></bp:Step>
 		<bp:Step Name="Vertical_SwipeLAyout" Screen="SwipeLayout\SwipeLayout_CenterAlign_V.xml"></bp:Step>
@@ -147,6 +151,10 @@
 
 	<bp:Workflow Name="Validation" Controller="Validation.js">
 		<bp:Step Name="Validation" Screen="Validation.xml"></bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="ScriptEngine" Controller="ScriptEngine.js">
+		<bp:Step Name="ScriptEngine" Screen="ScriptEngine.xml"></bp:Step>
 	</bp:Workflow>
 
 </bp:BusinessProcess>

@@ -1,7 +1,7 @@
 ﻿// ------------------------ Application -------------------
 
 function OnApplicationInit() {
-
+	var r = Global.TestResult();
 }
 
 // ------------------------ Events ------------------------

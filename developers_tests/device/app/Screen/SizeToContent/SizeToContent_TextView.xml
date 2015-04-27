@@ -23,29 +23,38 @@ that can save her people and restore
 freedom to the galaxy....)" />
 
 	<c:VerticalLayout>
-		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:Button Text="Refresh" OnClick="$Refresh()" />
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="Refresh" OnClick="$Refresh()" />		
 		<c:HorizontalLayout>
 			<c:MemoEdit Id="edt1" Text="$t1" />
 			<c:MemoEdit Id="edt2" Text="$t2" />
 			<c:MemoEdit Id="edt3" Text="$t3" />
 		</c:HorizontalLayout>
-		<c:ScrollView Id="">
+		<c:ScrollView>
 			<c:HorizontalLayout>
 				<c:TextView Text="$t1" />
 				<c:TextView Text="$t2" />
 				<c:TextView Text="$t3" />
 			</c:HorizontalLayout>
+			<c:HorizontalLine />
+			<c:HorizontalLayout CssClass="layout-with-image">
+				<c:TextView CssClass="with-image" Text="$t1" />
+				<c:TextView CssClass="with-image" Text="$t2" />
+				<c:TextView CssClass="with-image" Text="$t3" />
+			</c:HorizontalLayout>
+			<c:HorizontalLine />
 			<c:VerticalLayout>
 				<c:TextView CssClass="multiline" Text="$t1" />
 				<c:TextView CssClass="multiline" Text="$t2" />
 				<c:TextView CssClass="multiline" Text="$t3" />
 			</c:VerticalLayout>
+			<c:HorizontalLine />
 			<c:DockLayout>
 				<c:TextView Text="$t1" />
 				<c:TextView Text="$t2" />
 				<c:TextView Text="$t3" />
 			</c:DockLayout>
+			<c:HorizontalLine />
 			<c:DockLayout>
 				<c:TextView CssClass="multiline" Text="$t1" />
 				<c:TextView CssClass="multiline" Text="$t2" />

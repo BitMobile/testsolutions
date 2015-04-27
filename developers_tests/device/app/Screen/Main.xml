@@ -20,5 +20,6 @@
 		<c:Button Text="Database" OnClickAction="$DoAction(Database)" />
 		<c:Button Text="Client Model" OnClickAction="$DoAction(ClientModel)" />
 		<c:Button Text="Validation" OnClickAction="$DoAction(Validation)"/>
+		<c:Button Text="Script engine" OnClickAction="$DoAction(ScriptEngine)"/>
 	</c:ScrollView>
 </c:Screen>
