@@ -3,6 +3,9 @@
 
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:Button Text="Text View" OnClickAction="$DoAction(TextView)" />					
+		<c:Button Text="Text View" OnClickAction="$DoAction(TextView)" />
+		<c:Button Text="Horizontal" OnClickAction="$DoAction(Horizontal)" />
+		<c:Button Text="Vertical" OnClickAction="$DoAction(Vertical)" />
+		<c:Button Text="Dock" OnClickAction="$DoAction(Dock)" />					
 	</c:VerticalLayout>
 </c:Screen>

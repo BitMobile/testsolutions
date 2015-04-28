@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="SizeToContent.css">
+
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		
+		<c:SwipeHorizontalLayout>
+			<c:VerticalLayout CssClass="size-by-content">
+				<c:TextView CssClass="multiline"
+					Text="TextView in VL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+			</c:VerticalLayout>
+
+			<c:VerticalLayout CssClass="size-by-content">
+				<c:TextView Text="TextView #1 in VL." />
+				<c:TextView Text="TextView #2 in VL." />
+				<c:TextView Text="TextView #3 in VL." />
+				<c:TextView Text="TextView #4 in VL." />
+				<c:TextView Text="TextView #5 in VL." />
+			</c:VerticalLayout>
+
+			<c:VerticalLayout CssClass="size-by-content">
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:VerticalLayout CssClass="size-by-content">
+						<c:TextView CssClass="multiline"
+							Text="TextView in nested VL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+					</c:VerticalLayout>
+				</c:VerticalLayout>
+			</c:VerticalLayout>
+
+			<c:VerticalLayout CssClass="size-by-content">
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:VerticalLayout CssClass="size-by-content">
+						<c:TextView Text="TextView #1 in nested VL." />
+						<c:TextView Text="TextView #2 in nested VL." />
+						<c:TextView Text="TextView #3 in nested VL." />
+						<c:TextView Text="TextView #4 in nested VL." />
+						<c:TextView Text="TextView #5 in nested VL." />
+					</c:VerticalLayout>
+				</c:VerticalLayout>
+			</c:VerticalLayout>
+
+			<c:SwipeVerticalLayout CssClass="size-by-content">
+				<c:TextView CssClass="multiline"
+					Text="TextView in SVL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+			</c:SwipeVerticalLayout>
+
+			<c:SwipeVerticalLayout CssClass="size-by-content">
+				<c:TextView CssClass="multiline" Text="TextView #1 in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				<c:HorizontalLine/>
+				<c:TextView CssClass="multiline" Text="TextView #2 in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				<c:HorizontalLine/>
+				<c:TextView CssClass="multiline" Text="TextView #3 in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				<c:HorizontalLine/>
+				<c:TextView CssClass="multiline" Text="TextView #4 in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				<c:HorizontalLine/>
+				<c:TextView CssClass="multiline" Text="TextView #5 in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+			</c:SwipeVerticalLayout>
+
+			<c:SwipeVerticalLayout CssClass="size-by-content">
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:VerticalLayout CssClass="size-by-content">
+						<c:TextView CssClass="multiline"
+							Text="TextView in nested VL in SVL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription... The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+					</c:VerticalLayout>
+				</c:VerticalLayout>
+			</c:SwipeVerticalLayout>
+
+			<c:SwipeVerticalLayout CssClass="size-by-content">
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:TextView CssClass="multiline" Text="TextView #1 in nested VL in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				</c:VerticalLayout>
+				<c:HorizontalLine/>
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:TextView CssClass="multiline" Text="TextView #2 in nested VL in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				</c:VerticalLayout>
+				<c:HorizontalLine/>
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:TextView CssClass="multiline" Text="TextView #3 in nested VL in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				</c:VerticalLayout>
+				<c:HorizontalLine/>
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:TextView CssClass="multiline" Text="TextView #4 in nested VL in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				</c:VerticalLayout>
+				<c:HorizontalLine/>
+				<c:VerticalLayout CssClass="size-by-content">
+					<c:TextView CssClass="multiline" Text="TextView #5 in nested VL in SVL: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+				</c:VerticalLayout>
+			</c:SwipeVerticalLayout>
+
+		</c:SwipeHorizontalLayout>
+	</c:VerticalLayout>
+</c:Screen>

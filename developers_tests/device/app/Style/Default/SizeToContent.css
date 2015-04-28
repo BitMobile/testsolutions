@@ -4,17 +4,17 @@ hl {
 	background-color: #0c0;
 }
 
-TextView{
-	width: 1% auto;	
+TextView {
+	width: 1% auto;
 	height: 40% auto;
 	margin-left: 1px;
 	margin-right: 1px;
 	color: #000;
 	background-color: #eef;
-	font: 2sp arial;	
+	font: 2sp arial;
 }
 
-MemoEdit{
+MemoEdit {
 	width: 30%;
 	height: 100%;
 	margin-left: 3%;
@@ -22,17 +22,17 @@ MemoEdit{
 	background-color: #eee;
 }
 
-.multiline{
-	width: 50%;		
+.multiline {
+	width: 50sp;
 	height: 10% auto;
 	white-space: normal;
 }
 
-.layout-with-image{
+.layout-with-image {
 	height: 32mm;
 }
 
-.with-image{
+.with-image {
 	width: 0% auto;
 	background-image: url(cat3.jpg);
 }
@@ -40,7 +40,6 @@ MemoEdit{
 sv vl {
 	height: 30%;
 }
-
 
 sv dl {
 	height: 30%;
@@ -55,3 +54,19 @@ sv dl multiline {
 }
 
 
+.size-by-content {
+	width: 0% auto;
+	height: 0% auto;
+}
+
+.size-by-content TextView {
+	font: 4sp arial;
+}
+
+.dock-bottom{
+	dock-align: bottom;
+}
+
+.dock-right{
+	dock-align: right;
+}

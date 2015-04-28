@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="SizeToContent.css">
+
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+
+		<c:ScrollView>
+			<c:DockLayout CssClass="size-by-content">
+				<c:TextView
+					Text="TextView in DL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+			</c:DockLayout>
+			<c:HorizontalLine />
+
+			<c:DockLayout CssClass="size-by-content">
+				<c:TextView CssClass="dock-bottom" Text="#5 in DL from bottom." />
+				<c:TextView CssClass="dock-bottom" Text="#4 in DL from bottom." />
+				<c:TextView CssClass="dock-bottom" Text="#3 in DL from bottom." />
+				<c:TextView CssClass="dock-bottom" Text="#2 in DL from bottom." />
+				<c:TextView CssClass="dock-bottom" Text="#1 in DL from bottom." />
+			</c:DockLayout>
+			<c:HorizontalLine />
+
+			<c:DockLayout CssClass="size-by-content">
+				<c:TextView CssClass="dock-right" Text="#5 in DL from right." />
+				<c:TextView CssClass="dock-right" Text="#4 in DL from right." />
+				<c:TextView CssClass="dock-right" Text="#3 in DL from right." />
+				<c:TextView CssClass="dock-right" Text="#2 in DL from right." />
+				<c:TextView CssClass="dock-right" Text="#1 in DL from right." />
+			</c:DockLayout>
+			<c:HorizontalLine />
+
+			<c:DockLayout CssClass="size-by-content">
+				<c:DockLayout CssClass="size-by-content">
+					<c:DockLayout CssClass="size-by-content">
+						<c:TextView
+							Text="TextView in nested HL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+					</c:DockLayout>
+				</c:DockLayout>
+			</c:DockLayout>
+			<c:HorizontalLine />
+
+			<c:DockLayout CssClass="size-by-content">
+				<c:DockLayout CssClass="size-by-content">
+					<c:DockLayout CssClass="size-by-content">
+						<c:TextView Text="TextView #1 in nested DL." />
+						<c:TextView Text="TextView #2 in nested DL." />
+						<c:TextView Text="TextView #3 in nested DL." />
+						<c:TextView Text="TextView #4 in nested DL." />
+						<c:TextView Text="TextView #5 in nested DL." />
+					</c:DockLayout>
+				</c:DockLayout>
+			</c:DockLayout>			
+
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

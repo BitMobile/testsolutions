@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="SizeToContent.css">
+
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+
+		<c:ScrollView>
+			<c:HorizontalLayout CssClass="size-by-content">
+				<c:TextView
+					Text="TextView in HL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+			</c:HorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:HorizontalLayout CssClass="size-by-content">
+				<c:TextView Text="TextView #1 in HL." />
+				<c:TextView Text="TextView #2 in HL." />
+				<c:TextView Text="TextView #3 in HL." />
+				<c:TextView Text="TextView #4 in HL." />
+				<c:TextView Text="TextView #5 in HL." />
+			</c:HorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:HorizontalLayout CssClass="size-by-content">
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:HorizontalLayout CssClass="size-by-content">
+						<c:TextView
+							Text="TextView in nested HL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+					</c:HorizontalLayout>
+				</c:HorizontalLayout>
+			</c:HorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:HorizontalLayout CssClass="size-by-content">
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:HorizontalLayout CssClass="size-by-content">
+						<c:TextView Text="TextView #1 in nested HL." />
+						<c:TextView Text="TextView #2 in nested HL." />
+						<c:TextView Text="TextView #3 in nested HL." />
+						<c:TextView Text="TextView #4 in nested HL." />
+						<c:TextView Text="TextView #5 in nested HL." />
+					</c:HorizontalLayout>
+				</c:HorizontalLayout>
+			</c:HorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:SwipeHorizontalLayout CssClass="size-by-content">
+				<c:TextView
+					Text="TextView in SHL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+			</c:SwipeHorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:SwipeHorizontalLayout CssClass="size-by-content">
+				<c:TextView Text="TextView #1 in SHL." />
+				<c:TextView Text="TextView #2 in SHL." />
+				<c:TextView Text="TextView #3 in SHL." />
+				<c:TextView Text="TextView #4 in SHL." />
+				<c:TextView Text="TextView #5 in SHL." />
+			</c:SwipeHorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:SwipeHorizontalLayout CssClass="size-by-content">
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:HorizontalLayout CssClass="size-by-content">
+						<c:TextView
+							Text="TextView in nested HL in SHL with big text: The priest had a dog, And he loved her. The dog ate a piece of meat, He killed her. He buried her in the ground, And he wrote an inscription..." />
+					</c:HorizontalLayout>
+				</c:HorizontalLayout>
+			</c:SwipeHorizontalLayout>
+			<c:HorizontalLine/>
+
+			<c:SwipeHorizontalLayout CssClass="size-by-content">
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:TextView Text="TextView #1 in nested HL in SHL." />
+				</c:HorizontalLayout>
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:TextView Text="TextView #2 in nested HL in SHL." />
+				</c:HorizontalLayout>
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:TextView Text="TextView #3 in nested HL in SHL." />
+				</c:HorizontalLayout>
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:TextView Text="TextView #4 in nested HL in SHL." />
+				</c:HorizontalLayout>
+				<c:HorizontalLayout CssClass="size-by-content">
+					<c:TextView Text="TextView #5 in nested HL in SHL." />
+				</c:HorizontalLayout>
+			</c:SwipeHorizontalLayout>
+			<c:HorizontalLine/>
+
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

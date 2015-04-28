@@ -29,9 +29,14 @@
 	<bp:Workflow Name="SizeToContent" Controller="SizeToContent.js">
 		<bp:Step Name="SizeToContent" Screen="SizeToContent.xml">
 			<bp:Action Name="TextView" NextStep="TextView" />
-			<bp:Action Name="Button" NextStep="Button" />
+			<bp:Action Name="Horizontal" NextStep="Horizontal" />
+			<bp:Action Name="Vertical" NextStep="Vertical" />
+			<bp:Action Name="Dock" NextStep="Dock" />
 		</bp:Step>		
-		<bp:Step Name="TextView" Screen="SizeToContent_TextView.xml"/>	
+		<bp:Step Name="TextView" Screen="SizeToContent_TextView.xml"/>
+		<bp:Step Name="Horizontal" Screen="SizeToContent_Horizontal.xml"/>
+		<bp:Step Name="Vertical" Screen="SizeToContent_Vertical.xml"/>
+		<bp:Step Name="Dock" Screen="SizeToContent_Dock.xml"/>			
 	</bp:Workflow>
 
 	<bp:Workflow Name="StyleText" Controller="Style.js">
