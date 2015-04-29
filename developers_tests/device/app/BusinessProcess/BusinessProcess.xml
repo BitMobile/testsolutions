@@ -23,6 +23,7 @@
 			<bp:Action Name="ClientModel" NextWorkflow="ClientModel" />
 			<bp:Action Name="Validation" NextWorkflow="Validation" />
 			<bp:Action Name="ScriptEngine" NextWorkflow="ScriptEngine" />
+			<bp:Action Name="Styles_Selected" NextWorkflow="Styles_Selected" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -32,11 +33,11 @@
 			<bp:Action Name="Horizontal" NextStep="Horizontal" />
 			<bp:Action Name="Vertical" NextStep="Vertical" />
 			<bp:Action Name="Dock" NextStep="Dock" />
-		</bp:Step>		
-		<bp:Step Name="TextView" Screen="SizeToContent_TextView.xml"/>
-		<bp:Step Name="Horizontal" Screen="SizeToContent_Horizontal.xml"/>
-		<bp:Step Name="Vertical" Screen="SizeToContent_Vertical.xml"/>
-		<bp:Step Name="Dock" Screen="SizeToContent_Dock.xml"/>			
+		</bp:Step>
+		<bp:Step Name="TextView" Screen="SizeToContent_TextView.xml" />
+		<bp:Step Name="Horizontal" Screen="SizeToContent_Horizontal.xml" />
+		<bp:Step Name="Vertical" Screen="SizeToContent_Vertical.xml" />
+		<bp:Step Name="Dock" Screen="SizeToContent_Dock.xml" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="StyleText" Controller="Style.js">
@@ -160,6 +161,10 @@
 
 	<bp:Workflow Name="ScriptEngine" Controller="ScriptEngine.js">
 		<bp:Step Name="ScriptEngine" Screen="ScriptEngine.xml"></bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="Styles_Selected" Controller="Empty.js">
+		<bp:Step Name="Styles_Selected" Screen="Styles_Selected.xml"></bp:Step>
 	</bp:Workflow>
 
 </bp:BusinessProcess>

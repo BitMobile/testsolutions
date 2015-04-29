@@ -1,0 +1,54 @@
+Button{
+	selected-background: #0f0;
+}
+
+vl vl {
+	width: 100%;
+	height: 0%;	
+	selected-color: #00f;
+	border-style: solid;
+	border-radius: 50dp;
+	border-color: #000;
+	border-width: 10dp;		
+}
+
+vl TextView {
+	height: 40%;
+	width: 100%;	
+	selected-background: #f00;
+	selected-color: #0f0;
+}
+
+.menu-button {
+	background-image: url(button_menu.png);
+	selected-background: #f00;
+	selected-color: #0f0;
+}
+
+.menu-layout {	
+	height: 20%;
+	background-color: #0de;
+}
+
+.menu-layout TextView{
+	background-image: url(button_menu.png);
+}
+
+.menu-layout-car {	
+	background-image: url(BiBiCar.png);	
+}
+
+.menu-layout-car TextView{
+	background-color: #fff;
+}
+
+.html{
+	text-format: html;
+}
+
+.html-menu-button{
+	text-format: html;
+	background-image: url(button_menu.png);
+	selected-background: #f00;
+	selected-color: #0f0;
+}

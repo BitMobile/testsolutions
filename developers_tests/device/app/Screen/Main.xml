@@ -2,7 +2,7 @@
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
 	<c:ScrollView>
 		<c:Button Text="Size to content" OnClickAction="$DoAction(SizeToContent)" />
-		<c:Button Text="Style of TextView and Button" OnClickAction="$DoAction(StyleText)" />
+		<c:Button Text="Style of TextView and Button" OnClickAction="$DoAction(StyleText)" />		
 		<c:Button Text="Application commands" OnClickAction="$DoAction(ApplicationCmd)" />
 		<c:Button Text="GPS Tracking" OnClickAction="$DoAction(GPSTracking)" />
 		<c:Button Text="GPS" OnClickAction="$DoAction(GPS)" />
@@ -21,5 +21,6 @@
 		<c:Button Text="Client Model" OnClickAction="$DoAction(ClientModel)" />
 		<c:Button Text="Validation" OnClickAction="$DoAction(Validation)"/>
 		<c:Button Text="Script engine" OnClickAction="$DoAction(ScriptEngine)"/>
+		<c:Button Text="Style: selected-color and selected-background" OnClickAction="$DoAction(Styles_Selected)"/>
 	</c:ScrollView>
 </c:Screen>

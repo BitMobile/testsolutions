@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
-	StyleSheet="StyleButton.css">
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
 		<c:Button Text="Change text" OnClick="$ChangeText()" OnEvent="Back" />
-		<c:ScrollView CssClass="sv_stylist">
+		<c:ScrollView CssClass="sv_stylist">			
 			<c:Button Id="tvTest1" Text="Default text: fp рй." OnClick="$Empty()" />
 			<c:Button Id="tvTest2" OnClick="$Empty()"
 				Text="Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй. Default text: fp рй." />
@@ -40,8 +39,6 @@
 				Text="Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. Multiline padding: fp рй. " />
 			<c:Button Id="tvTest17" CssClass="multilineline_padding"
 				OnClick="$Empty()" Text="Multiline padding: fp рй." />
-
-			<!-- <c:Button CssClass="" Text=""/> -->
 
 		</c:ScrollView>
 	</c:VerticalLayout>

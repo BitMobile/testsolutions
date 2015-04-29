@@ -6,6 +6,6 @@
 		<c:Button Text="Html in TextView" OnClickAction="$DoAction(TextView_html)" />
 		<c:Button Text="Background Image in TextView" OnClickAction="$DoAction(TextView_backgroundImage)" />
 		<c:Button Text="Button" OnClickAction="$DoAction(Button)" />
-		<c:Button Text="Html in Button" OnClickAction="$DoAction(Button_html)" />
+		<c:Button Text="Html in Button" OnClickAction="$DoAction(Button_html)" />		
 	</c:ScrollView>
 </c:Screen>
