@@ -24,6 +24,7 @@
 			<bp:Action Name="Validation" NextWorkflow="Validation" />
 			<bp:Action Name="ScriptEngine" NextWorkflow="ScriptEngine" />
 			<bp:Action Name="Styles_Selected" NextWorkflow="Styles_Selected" />
+			<bp:Action Name="ValueStack_Common" NextWorkflow="ValueStack_Common" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -165,6 +166,10 @@
 
 	<bp:Workflow Name="Styles_Selected" Controller="Empty.js">
 		<bp:Step Name="Styles_Selected" Screen="Styles_Selected.xml"></bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="ValueStack_Common" Controller="Empty.js">
+		<bp:Step Name="ValueStack_Common" Screen="ValueStack_Common.xml"></bp:Step>
 	</bp:Workflow>
 
 </bp:BusinessProcess>

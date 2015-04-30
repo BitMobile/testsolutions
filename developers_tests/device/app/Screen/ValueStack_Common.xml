@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<s:If Test="$common.OS == 'Android'">
+			<c:TextView Text="common.OS: Android" />
+		</s:If>
+		<s:If Test="$common.OS == 'IOS'">
+			<c:TextView Text="common.OS: IOS" />
+		</s:If>
+
+	</c:VerticalLayout>
+</c:Screen>
