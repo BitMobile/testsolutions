@@ -4,5 +4,7 @@
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Test global simple" OnClick="$TestGlobalSimple()" />
 		<c:TextView Text="$GetImagePath(I, Hate, this)" />
+		<c:TextView Text="$StringFormat()"/>
+		<c:TextView Text="$NewFormat()"/>
 	</c:VerticalLayout>
 </c:Screen>

@@ -149,10 +149,10 @@
 	</bp:Workflow>
 
 	<bp:Workflow Name="ClientModel" Controller="ClientModel.js">
-		<bp:Step Name="ClientModel" Screen="ClientModel.xml">
+		<bp:Step Name="ClientModel" Screen="ClientModel\ClientModel.xml">
 			<bp:Action Name="Dialog" NextStep="Dialog" />
 		</bp:Step>
-		<bp:Step Name="Dialog" Screen="ClientModel_Dialog.xml" />
+		<bp:Step Name="Dialog" Screen="ClientModel\ClientModel_Dialog.xml" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="Validation" Controller="Validation.js">
