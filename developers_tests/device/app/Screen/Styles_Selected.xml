@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
 	StyleSheet="Styles.css">
-	<c:VerticalLayout>
+	<c:ScrollView>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Menu" OnClick="$Empty()" />
 		<c:Button Text="Menu" CssClass="menu-button" OnClick="$Empty()" />
 		<c:Button Text="Menu html" CssClass="html" OnClick="$Empty()" />
-		<c:Button Text="Menu html" CssClass="html-menu-button" OnClick="$Empty()" />
+		<c:Button Text="Menu html" CssClass="html-menu-button"
+			OnClick="$Empty()" />
 		<c:VerticalLayout CssClass="menu-layout" OnClick="$Empty()">
 			<c:TextView Text="Menu" />
-			<c:TextView Text="Menu html" CssClass="html"/>
+			<c:TextView Text="Menu html" CssClass="html" />
+			<c:Image />
 		</c:VerticalLayout>
 		<c:VerticalLayout CssClass="menu-layout-car" OnClick="$Empty()">
 			<c:TextView Text="Menu" />
-			<c:TextView Text="Menu html" CssClass="html"/>
+			<c:TextView Text="Menu html" CssClass="html" />
+			<c:Image />
 		</c:VerticalLayout>
-	</c:VerticalLayout>
+		</c:ScrollView>
 </c:Screen>
