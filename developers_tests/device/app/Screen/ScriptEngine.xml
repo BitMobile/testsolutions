@@ -6,5 +6,6 @@
 		<c:TextView Text="$GetImagePath(I, Hate, this)" />
 		<c:TextView Text="$StringFormat()"/>
 		<c:TextView Text="$NewFormat()"/>
+		<c:TextView Text="$GetType()"/>
 	</c:VerticalLayout>
 </c:Screen>
