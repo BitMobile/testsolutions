@@ -33,7 +33,7 @@ TextView {
 	height: 5mm;
 	color: #000;
 	background-color: #eee;
-	font: 80% arial;
+	font: 80%    arial;
 	padding-top: 10%;
 }
 
@@ -42,7 +42,7 @@ EditText {
 	height: 5mm;
 	color: #000;
 	background-color: #eee;
-	font: 80% arial;
+	font: 80%;
 	padding-top: 10%;
 	placeholder-color: #8b7765;
 }
