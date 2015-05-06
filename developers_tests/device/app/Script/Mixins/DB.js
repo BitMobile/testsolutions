@@ -3,7 +3,15 @@ function DoSave()
     DB.Save();
 }
 
-function DoSync()
+function DoSync(indicator)
 {
-    DB.Sync();
+	if(indicator != null)
+		indicator.Start();		
+	
+    DB.Sync(SyncCallback, indicator);
+}
+
+function SyncCallback(indicator){
+	if(indicator != null)
+		indicator.Stop();	
 }
