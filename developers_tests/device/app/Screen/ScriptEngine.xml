@@ -7,5 +7,9 @@
 		<c:TextView Text="$StringFormat()"/>
 		<c:TextView Text="$NewFormat()"/>
 		<c:TextView Text="$GetType()"/>
+		<s:Push Id="array" Value="$CreateArray($param1)"/>
+		<s:Push Id="array2D" Value="$Create2DArray($param2)"/>
+		<c:Button Text="Show arrays" OnClick="$ShowArray($array, $array2D, $param3)"/>
+		<c:Button Text="Refresh arrays" OnClick="$RefreshArrays($array, $array2D)"/>		
 	</c:VerticalLayout>
 </c:Screen>
