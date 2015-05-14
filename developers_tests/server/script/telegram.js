@@ -8,23 +8,23 @@
 function connect() {
 	try {
 		var client = Telegram.Client($.phone);
-		if(!client.Authorized)
+		if (!client.Authorized)
 			if (!client.Connect())
 				return "sms";
-				
+
 		return "success";
 	} catch (e) {
 		return e.Message;
 	}
 }
 
-//Попытка авторизации по sms
-//Параметры:
-//	$.phone - номер телефона отправителя
-//	$.sms - смс код
-//Возвращает:
-//	"success" - авторизация успешна
-//	текст ошибки
+// Попытка авторизации по sms
+// Параметры:
+// $.phone - номер телефона отправителя
+// $.sms - смс код
+// Возвращает:
+// "success" - авторизация успешна
+// текст ошибки
 function authorize() {
 	try {
 		var client = Telegram.Client($.phone);
@@ -35,19 +35,22 @@ function authorize() {
 	}
 }
 
-//Попытка отправки сообщения
-//Параметры:
-//	$.phone - номер телефона отправителя
-//	$.user - телефон адресата
-//	$.message - текст сообщения
-//Возвращает:
-//	"success" - сообщение успешно отправлено
-//	текст ошибки
-function send(){
+// Попытка отправки сообщения
+// Параметры:
+// $.phone - номер телефона отправителя
+// $.user - телефон адресата
+// $.message - текст сообщения
+// Возвращает:
+// "success" - сообщение успешно отправлено
+// текст ошибки
+function send() {
 	try {
 		var client = Telegram.Client($.phone);
-		client.SendMessage($.user, $.message);
-		return "success";
+		if (client.Authorized) {
+			client.SendMessage($.user, $.message);
+			return "success";
+		}
+		return "not_authorized"
 	} catch (e) {
 		return e.Message;
 	}
@@ -79,27 +82,28 @@ function regUserId() {
 	}
 }
 
-function sendMessage(){
+function sendMessage() {
 	try {
 		var client = Telegram.Client($.phone);
-		client.Rpc("messages.sendMessage", 
-				[Telegram.Comb("inputPeerContact", $.userId), $.message, Telegram.GetRandom()]);
+		client.Rpc("messages.sendMessage", [
+				Telegram.Comb("inputPeerContact", $.userId), $.message,
+				Telegram.GetRandom() ]);
 		return "success";
 	} catch (e) {
 		return e.Message;
 	}
 }
 
-function getUpdates(){
+function getUpdates() {
 	try {
 		var client = Telegram.Client($.phone);
 		var updates = client.GetUpdates();
 		var result = "";
-		for (var update in updates) {
+		for ( var update in updates) {
 			result += "; " + update.ToString();
 		}
-		return result;		
+		return result;
 	} catch (e) {
 		return e.Message;
-	}	
-} 
+	}
+}
