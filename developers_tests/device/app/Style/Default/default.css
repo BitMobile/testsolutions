@@ -49,10 +49,10 @@ EditText {
 
 MemoEdit {
 	width: 100%;
-	height: 5mm;
+	height: 10mm;
 	color: #000;
 	background-color: #eee;
-	font: 80% arial;
+	font: 40% arial;
 	padding-top: 10%;
 	placeholder-color: #8b7765;
 }

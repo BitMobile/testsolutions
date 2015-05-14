@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack" StyleSheet="EditText_MemoEdit.css">
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="EditText_MemoEdit.css">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
-		<c:Button Text="Set focus to EditText" OnClick="$SetFocus($edtEditText)" />
-		<c:Button Text="Set focus to MemoEdit" OnClick="$SetFocus($edtMemoEdit)" />
-		<c:Button Text="Enable or Disable" OnClick="$EnableDisable()"/>
 		<c:TextView Id="txtCurrent" Text="" />
-		
+
 		<c:ScrollView>
 			<c:HorizontalLine />
 
@@ -19,16 +17,25 @@
 			<c:MemoEdit Id="edtMemoEdit" Text=""
 				OnGetFocus="$OnGetFocus($tvMemoEdit)" OnLostFocus="$OnLostFocus($tvMemoEdit)" />
 			<c:HorizontalLine />
-			
+
 			<c:EditText Placeholder="Default (EditText)" />
 			<c:HorizontalLine />
 			<c:MemoEdit Placeholder="Default (MemoEdit)" />
-			<c:HorizontalLine />		
+			<c:HorizontalLine />
 			<c:EditText Placeholder="Styled (EditText)" CssClass="green_placeholder" />
 			<c:HorizontalLine />
-			<c:MemoEdit Placeholder="Styled (MemoEdit)" CssClass="green_placeholder"/>
+			<c:MemoEdit Placeholder="Styled (MemoEdit)" CssClass="green_placeholder" />
+			<c:HorizontalLine />
+			<c:EditText Placeholder="Keyboard: numeric" Keyboard="numeric" />
+			<c:HorizontalLine />
+			<c:MemoEdit Placeholder="Keyboard: numeric" Keyboard="numeric" />
 			<c:HorizontalLine />
 
 		</c:ScrollView>
+		
+		<c:Button Text="Set focus to EditText" OnClick="$SetFocus($edtEditText)" />
+		<c:Button Text="Set focus to MemoEdit" OnClick="$SetFocus($edtMemoEdit)" />
+		<c:Button Text="Enable or Disable" OnClick="$EnableDisable()" />
+		
 	</c:VerticalLayout>
 </c:Screen>
