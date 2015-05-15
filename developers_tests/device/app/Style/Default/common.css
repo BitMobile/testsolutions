@@ -1,0 +1,97 @@
+.like_button {
+	width: 100%;
+	height: 5mm;
+}
+
+.sv_stylist vl {
+	width: 100%;
+	height: 4mm;
+}
+
+.sv_stylist Button {
+	width: 100%;
+	height: 4mm;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	color: #000;
+	background-color: #eef;
+	text-align: left;
+	font: 90% arial;
+	color: #5a5;
+}
+
+.sv_stylist TextView {
+	width: 100%;
+	height: 4mm;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	color: #000;
+	background-color: #eef;
+	text-align: left;
+	font: 90% arial;
+	color: #5a5;
+}
+
+.multiline {
+	white-space: normal;
+	height: 8mm;
+	font-size: 45% ;
+}
+
+.big_font {
+	font-size: 200% ;
+}
+
+.half_font {
+	font-size: 45% ;
+}
+
+.small_font {
+	font-size: 20% ;
+}
+
+.selected_color {
+	selected-color: #aaa;
+}
+
+.center_singleline {
+	text-align: center;
+}
+
+.right_singleline {
+	text-align: right;
+}
+
+.center_multiline {
+	text-align: center;
+	white-space: normal;
+	height: 8mm;
+	font-size: 45% ;
+}
+
+.right_multiline {
+	text-align: right;
+	white-space: normal;
+	height: 8mm;
+	font-size: 45% ;
+}
+
+.singleline_padding {
+	padding-left: 5%;
+	padding-top: 10%;
+	padding-right: 5%;
+	padding-bottom: 10%;
+	font-size: 80% ;
+}
+
+.multilineline_padding {
+	padding-left: 5%;
+	padding-top: 10%;
+	padding-right: 5%;
+	padding-bottom: 10%;
+	white-space: normal;
+	height: 8mm;
+	font-size: 40% ;
+}

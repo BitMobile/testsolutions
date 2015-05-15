@@ -1,7 +1,7 @@
 TextView {
 	width: 100%;
 	height: 0%;
-	font: 20mm arial;
+	font-size: 20mm ;
 	background-image: url(BiBiCar.png);
 	white-space: normal;
 }

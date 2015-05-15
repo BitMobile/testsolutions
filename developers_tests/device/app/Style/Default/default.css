@@ -33,7 +33,7 @@ TextView {
 	height: 5mm;
 	color: #000;
 	background-color: #eee;
-	font: 80% arial;
+	font-size: 80%;
 	padding-top: 10%;
 }
 
@@ -42,7 +42,7 @@ EditText {
 	height: 5mm;
 	color: #000;
 	background-color: #eee;
-	font: 80%;
+	font-size: 80%;
 	padding-top: 10%;
 	placeholder-color: #8b7765;
 }
@@ -52,7 +52,7 @@ MemoEdit {
 	height: 10mm;
 	color: #000;
 	background-color: #eee;
-	font: 40% arial;
+	font-size: 40%;
 	padding-top: 10%;
 	placeholder-color: #8b7765;
 }
@@ -65,6 +65,7 @@ CheckBox {
 Button {
 	width: 100%;
 	height: 5mm;
+	font-size: 80%;
 	background-color: #FF8C00;
 	color: #fff;
 	border-style: solid;
@@ -99,102 +100,4 @@ SwipeHorizontalLayout {
 SwipeVerticalLayout {
 	width: 100%;
 	height: 100%;
-}
-
-.like_button {
-	width: 100%;
-	height: 5mm;
-}
-
-.sv_stylist vl {
-	width: 100%;
-	height: 4mm;
-}
-
-.sv_stylist Button {
-	width: 100%;
-	height: 4mm;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #000;
-	color: #000;
-	background-color: #eef;
-	text-align: left;
-	font: 90% arial;
-	color: #5a5;
-}
-
-.sv_stylist TextView {
-	width: 100%;
-	height: 4mm;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #000;
-	color: #000;
-	background-color: #eef;
-	text-align: left;
-	font: 90% arial;
-	color: #5a5;
-}
-
-.multiline {
-	white-space: normal;
-	height: 8mm;
-	font: 45% arial;
-}
-
-.big_font {
-	font: 200% arial;
-}
-
-.half_font {
-	font: 45% arial;
-}
-
-.small_font {
-	font: 20% arial;
-}
-
-.selected_color {
-	selected-color: #aaa;
-}
-
-.center_singleline {
-	text-align: center;
-}
-
-.right_singleline {
-	text-align: right;
-}
-
-.center_multiline {
-	text-align: center;
-	white-space: normal;
-	height: 8mm;
-	font: 45% arial;
-}
-
-.right_multiline {
-	text-align: right;
-	white-space: normal;
-	height: 8mm;
-	font: 45% arial;
-}
-
-.singleline_padding {
-	padding-left: 5%;
-	padding-top: 10%;
-	padding-right: 5%;
-	padding-bottom: 10%;
-	font: 80% arial;
-}
-
-.multilineline_padding {
-	padding-left: 5%;
-	padding-top: 10%;
-	padding-right: 5%;
-	padding-bottom: 10%;
-	white-space: normal;
-	height: 8mm;
-	font: 40% arial;
 }

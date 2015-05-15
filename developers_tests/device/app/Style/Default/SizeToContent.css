@@ -11,7 +11,7 @@ TextView {
 	margin-right: 1px;
 	color: #000;
 	background-color: #eef;
-	font: 2sp arial;
+	font-size: 2sp ;
 }
 
 MemoEdit {
@@ -60,7 +60,7 @@ sv dl multiline {
 }
 
 .size-by-content TextView {
-	font: 4sp arial;
+	font-size: 4sp ;
 }
 
 .dock-bottom{
