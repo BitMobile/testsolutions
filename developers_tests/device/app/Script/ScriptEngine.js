@@ -1,3 +1,12 @@
+function OnLoading(name){
+	Console.WriteLine("OnLoading: " + name);
+}
+
+function OnLoad(name){
+	Console.WriteLine("OnLoad: " + name);
+}
+
+
 function TestGlobalSimple() {
 	Global.TestDialog();
 }
