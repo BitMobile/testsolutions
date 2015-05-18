@@ -40,6 +40,12 @@
 	font-size: 45% ;
 }
 
+.multiline_resizable {
+	white-space: normal;
+	height: 0% auto;
+	font-size: 4mm ;
+}
+
 .big_font {
 	font-size: 200% ;
 }

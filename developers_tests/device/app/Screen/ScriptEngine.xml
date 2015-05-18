@@ -4,12 +4,16 @@
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Test global simple" OnClick="$TestGlobalSimple()" />
 		<c:TextView Text="$GetImagePath(I, Hate, this)" />
-		<c:TextView Text="$StringFormat()"/>
-		<c:TextView Text="$NewFormat()"/>
-		<c:TextView Text="$GetType()"/>
-		<s:Push Id="array" Value="$CreateArray($param1)"/>
-		<s:Push Id="array2D" Value="$Create2DArray($param2)"/>
-		<c:Button Text="Show arrays" OnClick="$ShowArray($array, $array2D, $param3)"/>
-		<c:Button Text="Refresh arrays" OnClick="$RefreshArrays($array, $array2D)"/>		
+		<c:TextView Text="$StringFormat()" />
+		<c:TextView Text="$NewFormat()" />
+		<c:TextView Text="$GetType()" />
+		<c:Button Text="Refresh compare" OnClick="$RefreshCompare(text,text,$tvComparer,$tvComparer)"/>
+		<c:TextView Id="tvComparer"
+			Text="Compare: {$Compare(text,text,$tvComparer,$tvComparer)}"
+			CssClass="multiline_resizable" />
+		<s:Push Id="array" Value="$CreateArray($param1)" />
+		<s:Push Id="array2D" Value="$Create2DArray($param2)" />
+		<c:Button Text="Show arrays" OnClick="$ShowArray($array, $array2D, $param3)" />
+		<c:Button Text="Refresh arrays" OnClick="$RefreshArrays($array, $array2D)" />
 	</c:VerticalLayout>
 </c:Screen>

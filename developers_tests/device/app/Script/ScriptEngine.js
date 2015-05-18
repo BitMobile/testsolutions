@@ -34,6 +34,28 @@ function GetType() {
 	return getType(obj);
 }
 
+function RefreshCompare(sender, arg1, arg2, c1, c2){
+	$.tvComparer.Text ="Compare: " + Compare(arg1, arg2, c1, c2);
+}
+
+function Compare(arg1, arg2, c1, c2){
+	var result = "\n\r Text: ";
+	result += CompareInternal(arg1, arg2);
+	result += ";\n\r Controls: ";
+	result += CompareInternal(c1, c2);
+	result += ";\n\r Numbers constans: ";
+	result += CompareInternal(42, 42);
+	result += ";\n\r Numbers: ";
+	result += CompareInternal(Number(42), Number("42"));	
+	result += ";\n\r Dates: ";
+	result += CompareInternal(Date("15.05.2015 12:45"), Date("15.05.2015 12:45"));	
+	result += ";\n\r Booleans constans: ";
+	result += CompareInternal(true, true);
+	result += ";\n\r Booleans: ";
+	result += CompareInternal(Boolean("true"), Boolean(1));
+	return result;
+}
+
 function CreateArray(arr) {
 	if(arr != null)
 		return arr;
@@ -111,3 +133,13 @@ function RefreshArrays(sender, arr, arr2d){
 		arr2d[i].push("refreshed");
 	DoRefresh(arr, arr2d);
 }
+
+function CompareInternal(arg1, arg2){
+	if(arg1 == arg2){
+		if(arg1 != arg2)
+			return "Error";		
+		return "True";
+	}
+	return "False"	
+}
+
