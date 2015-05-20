@@ -30,6 +30,10 @@
 			<c:HorizontalLine />
 			<c:MemoEdit Placeholder="Keyboard: numeric" Keyboard="numeric" />
 			<c:HorizontalLine />
+			<c:EditText Placeholder="Keyboard: phone" Keyboard="phone" />
+			<c:HorizontalLine />
+			<c:MemoEdit Placeholder="Keyboard: phone" Keyboard="phone" />
+			<c:HorizontalLine />
 
 		</c:ScrollView>
 		
