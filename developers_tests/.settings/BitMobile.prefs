@@ -1,6 +1,6 @@
-Bitmobile.device_address=
-Bitmobile.device_debug_port=
+Bitmobile.device_address=192.168.20.208
+Bitmobile.device_debug_port=8082
 Bitmobile.device_deploy_script=D\:\\Projects\\core\\BitMobileServer\\Utils\\Utils\\bin\\Debug\\utils.exe -dr -host http\://localhost/bitmobile -sp 123 -sn test D\:\\Projects\\testsolutions\\developers_tests\r\nD\:\\Projects\\core\\BitMobileServer\\Utils\\Utils\\bin\\Debug\\utils.exe -ar -host http\://localhost/bitmobile -sp 123 -sn test\r\n
-Bitmobile.device_starter_port=
+Bitmobile.device_starter_port=8082
 Bitmobile.server_url=http\://localhost/bitmobile
 eclipse.preferences.version=1

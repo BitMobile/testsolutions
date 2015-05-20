@@ -31,5 +31,5 @@ function AddEntry(Message)
 
 function GetTitle()
 {
-    return "BIT:Mobile server pages demo !";
+    return View.HtmlView("BIT:Mobile server pages demo !");
 }
