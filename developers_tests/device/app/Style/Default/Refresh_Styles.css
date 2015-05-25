@@ -1,0 +1,18 @@
+.top_line{
+	height: 5dp;
+}
+
+.button-initial{
+	text-format: html;
+	background-color: #f00;	
+}
+
+.button-new {
+	text-format: text;
+	background-color: #0f0;
+	height: 50mm;
+}
+
+.resizable_vl{
+	height: 0% auto;
+}

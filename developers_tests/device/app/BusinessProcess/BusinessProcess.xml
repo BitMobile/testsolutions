@@ -25,6 +25,7 @@
 			<bp:Action Name="ScriptEngine" NextWorkflow="ScriptEngine" />
 			<bp:Action Name="Styles_Selected" NextWorkflow="Styles_Selected" />
 			<bp:Action Name="ValueStack_Common" NextWorkflow="ValueStack_Common" />
+			<bp:Action Name="Refresh_Styles" NextWorkflow="Refresh_Styles" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -170,6 +171,10 @@
 
 	<bp:Workflow Name="ValueStack_Common" Controller="Empty.js">
 		<bp:Step Name="ValueStack_Common" Screen="ValueStack_Common.xml"></bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="Refresh_Styles" Controller="Refresh_Styles.js">
+		<bp:Step Name="Refresh_Styles" Screen="Refresh_Styles.xml" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>

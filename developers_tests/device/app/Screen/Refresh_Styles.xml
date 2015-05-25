@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Refresh_Styles.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Refresh" OnClick="$Refresh()" OnEvent="Back" />
+		<c:HorizontalLine CssClass="top_line" />
+		<c:DockLayout CssClass="resizable_vl">
+			<c:Button Id="button" Text="Button" CssClass="button-initial" />
+			<c:Button Text="Anchor2" />
+		</c:DockLayout>
+		<c:Button Text="Anchor1" />
+	</c:VerticalLayout>
+</c:Screen>
