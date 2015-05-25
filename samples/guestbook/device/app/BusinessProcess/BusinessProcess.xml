@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bp:BusinessProcess xmlns:bp="BitMobile.BusinessProcess">
+
+	<bp:Workflow Name="Main" Controller="Main.js"><!-- Стартовый рабочий процесс 
+			"Список сообщений" -->
+		<bp:Step Name="List" Screen="Main.xml"><!-- Стратовый шаг рабочего процесса -->
+			<bp:Action Name="Message" NextWorkflow="Message" /><!-- Событие 
+				рабочего процесса -->
+		</bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="Message"><!-- Рабочий процесс "Сообщение" -->
+		<bp:Step Name="Message" Screen="Message.xml" Controller="Message.js" /><!-- 
+			Стратовый шаг рабочего процесса -->
+	</bp:Workflow>
+
+</bp:BusinessProcess>

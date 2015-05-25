@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="main.css">
+	<c:DockLayout CssClass="root">
+		<c:TextView Text="#reports#" CssClass="caption" />
+		<c:ScrollView>
+			<s:Iterator Id="report" Value="$LoadReports()">
+				<c:Button Text="report" CssClass="header" OnClickAction="OpenReport($report)"/>				
+				<c:HorizontalLine CssClass="separator" />
+			</s:Iterator>
+		</c:ScrollView>
+	</c:DockLayout>
+</c:Screen>

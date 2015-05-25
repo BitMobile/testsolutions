@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="main.css">
+	<s:Push Id="text" Value="param1" />
+	<c:DockLayout CssClass="root">
+		<c:ScrollView>
+			<c:TextView Text="text" CssClass="header"/>			
+		</c:ScrollView>
+	</c:DockLayout>
+</c:Screen>

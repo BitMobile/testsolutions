@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Configuration xmlns:c="BitMobile.Configuration"
+	xmlns:s="BitMobile.ValueStack">
+	<c:BusinessProcess File="BusinessProcess.xml" /><!-- Задает файл рабочих процессов -->
+	<c:Style>
+		<c:DefaultStyles><!-- Задает стили по умолчанию -->
+			<c:DefaultStyle File="default.css" />
+			<c:DefaultStyle File="common.css" />
+		</c:DefaultStyles>
+	</c:Style>
+	<c:Script><!-- Задает настройки скриптов -->
+		<c:GlobalEvents File="Global\Events.js" />
+	</c:Script>
+</c:Configuration>

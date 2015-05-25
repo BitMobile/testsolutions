@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bp:BusinessProcess xmlns:bp="BitMobile.BusinessProcess">
+
+	<bp:Workflow Name="Main" Controller="Main.js">
+		<bp:Step Name="Main" Screen="Main.xml">
+			<bp:Action Name="Message" NextWorkflow="Message" />
+		</bp:Step>
+	</bp:Workflow>
+
+</bp:BusinessProcess>

@@ -1,0 +1,7 @@
+﻿sync	Синхронизация
+message	Сообщение
+sync_error	Ошибка синхронизации
+cancel	Отмена
+ok	ОК
+new_message	Новое сообщение
+reports	Отчеты

@@ -1,0 +1,20 @@
+/*«адаем внешний вид кнопок дл€ всего проекта*/
+Button {
+	background-color: #6C7B8B;
+	color: #fff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #fff;
+	border-radius: 1px;
+	selected-color: #ddd;
+}
+
+/*«адаем внешний вид текстовых блоков дл€ всего проекта*/
+TextView {
+	color: #aaa;
+	background-color: none;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}

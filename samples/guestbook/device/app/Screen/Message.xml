@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="message.css">
+	<c:DockLayout>
+		<c:HorizontalLayout CssClass="menu">
+			<c:Button Text="#cancel#" OnEvent="Back" OnClickAction="$Back()" />
+			<c:Button Text="#ok#" OnClickAction="$AddMessage($edtMessage.Text)" />
+		</c:HorizontalLayout>
+		<c:MemoEdit Id="edtMessage" Placeholder="#new_message#" CssClass="blob" />
+	</c:DockLayout>
+</c:Screen>

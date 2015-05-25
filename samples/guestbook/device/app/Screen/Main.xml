@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="main.css">
+	<c:DockLayout CssClass="root">
+		<c:TextView Text="#guestbook#" CssClass="caption" />
+		<c:HorizontalLayout CssClass="menu">
+			<c:Button Id="btnSync" Text="#sync#" OnClickAction="$Sync($syncIndicator)" />
+			<c:Indicator Id="syncIndicator" Visible="false" />
+			<c:Button Text="#message#" OnClickAction="$NewMessage()" />
+		</c:HorizontalLayout>
+		<c:ScrollView>
+			<s:Iterator Id="doc" Value="$LoadDocuments()">
+				<c:TextView Text="{$doc.UserName}({$doc.Date})" CssClass="header" />
+				<c:TextView Text="$doc.Description" CssClass="blob" />
+				<c:HorizontalLine CssClass="separator" />
+			</s:Iterator>
+		</c:ScrollView>
+	</c:DockLayout>
+</c:Screen>

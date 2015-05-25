@@ -1,0 +1,7 @@
+﻿sync	Synchronization
+message	Message
+sync_error	Synchronization error
+cancel	Cancel
+ok	OK
+new_message	New message
+reports	Reports
