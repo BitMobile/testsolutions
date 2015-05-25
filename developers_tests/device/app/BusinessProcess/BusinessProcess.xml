@@ -149,11 +149,16 @@
 		<bp:Step Name="TemoraryTables" Screen="Database_TemporaryTables.xml" />
 	</bp:Workflow>
 
-	<bp:Workflow Name="ClientModel" Controller="ClientModel.js">
-		<bp:Step Name="ClientModel" Screen="ClientModel\ClientModel.xml">
+	<bp:Workflow Name="ClientModel">
+		<bp:Step Name="ClientModel" Screen="ClientModel\ClientModel.xml"
+			Controller="Empty.js">
 			<bp:Action Name="Dialog" NextStep="Dialog" />
+			<bp:Action Name="HttpRequest" NextStep="HttpRequest" />
 		</bp:Step>
-		<bp:Step Name="Dialog" Screen="ClientModel\ClientModel_Dialog.xml" />
+		<bp:Step Name="Dialog" Screen="ClientModel\ClientModel_Dialog.xml"
+			Controller="ClientModel\ClientModel_Dialog.js" />
+		<bp:Step Name="HttpRequest" Screen="ClientModel\ClientModel_HttpRequest.xml"
+			Controller="ClientModel\ClientModel_HttpRequest.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="Validation" Controller="Validation.js">

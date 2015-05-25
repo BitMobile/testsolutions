@@ -3,5 +3,6 @@
 	<c:ScrollView>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Dialog" OnClickAction="$DoAction(Dialog)" />		
+		<c:Button Text="HttpRequest" OnClickAction="$DoAction(HttpRequest)" />
 	</c:ScrollView>
 </c:Screen>

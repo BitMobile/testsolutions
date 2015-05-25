@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:ScrollView>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:EditText Id="address"
+			Text="http:///" />
+		<c:EditText Id="query"
+			Text="/" />
+		<c:HorizontalLine />
+		<c:EditText Id="header_name" Placeholder="header name" />
+		<c:EditText Id="header_value" Placeholder="header value" />
+		<c:Button Text="Add header" OnClickAction="$HttpAddHeader($header_name, $header_value)" />
+		<c:HorizontalLine />
+		<c:Button Text="Get" OnClickAction="$HttpGet($address.Text, $query.Text)" />
+		<c:HorizontalLine />
+		<c:EditText Id="post" Placeholder="Post text" />
+		<c:Button Text="Post" OnClickAction="$HttpPost($address.Text, $query.Text, $post.Text)" />
+		<c:HorizontalLine />
+	</c:ScrollView>
+</c:Screen>
