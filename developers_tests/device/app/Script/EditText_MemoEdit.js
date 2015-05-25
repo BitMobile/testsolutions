@@ -16,3 +16,11 @@ function EnableDisable(sender, editText, memoEdit){
 	$.edtEditText.Enabled = !$.edtEditText.Enabled;
 	$.edtMemoEdit.Enabled = !$.edtMemoEdit.Enabled;
 }
+
+function OnChange(sender){
+	Console.WriteLine(sender.Text);
+}
+
+function OnChangeNum(sender){
+	Console.WriteLine(Number(sender.Text));
+}

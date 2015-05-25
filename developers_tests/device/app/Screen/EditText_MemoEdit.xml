@@ -9,30 +9,30 @@
 			<c:HorizontalLine />
 
 			<c:TextView Id="tvEditText" Text="" />
-			<c:EditText Id="edtEditText" Text=""
+			<c:EditText Id="edtEditText" Text="" OnChange="$OnChange()"
 				OnGetFocus="$OnGetFocus($tvEditText)" OnLostFocus="$OnLostFocus($tvEditText)" />
 			<c:HorizontalLine />
 
 			<c:TextView Id="tvMemoEdit" Text="" />
-			<c:MemoEdit Id="edtMemoEdit" Text=""
+			<c:MemoEdit Id="edtMemoEdit" Text="" OnChange="$OnChange()"
 				OnGetFocus="$OnGetFocus($tvMemoEdit)" OnLostFocus="$OnLostFocus($tvMemoEdit)" />
 			<c:HorizontalLine />
 
-			<c:EditText Placeholder="Default (EditText)" />
+			<c:EditText Placeholder="Default (EditText)" OnChange="$OnChange()"/>
 			<c:HorizontalLine />
-			<c:MemoEdit Placeholder="Default (MemoEdit)" />
+			<c:MemoEdit Placeholder="Default (MemoEdit)" OnChange="$OnChange()"/>
 			<c:HorizontalLine />
-			<c:EditText Placeholder="Styled (EditText)" CssClass="green_placeholder" />
+			<c:EditText Placeholder="Styled (EditText)" CssClass="green_placeholder" OnChange="$OnChange()"/>
 			<c:HorizontalLine />
-			<c:MemoEdit Placeholder="Styled (MemoEdit)" CssClass="green_placeholder" />
+			<c:MemoEdit Placeholder="Styled (MemoEdit)" CssClass="green_placeholder" OnChange="$OnChange()"/>
 			<c:HorizontalLine />
-			<c:EditText Placeholder="Keyboard: numeric" Keyboard="numeric" />
+			<c:EditText Placeholder="Keyboard: numeric" OnChange="$OnChangeNum()" Keyboard="numeric" />
 			<c:HorizontalLine />
-			<c:MemoEdit Placeholder="Keyboard: numeric" Keyboard="numeric" />
+			<c:MemoEdit Placeholder="Keyboard: numeric" OnChange="$OnChangeNum()" Keyboard="numeric" />
 			<c:HorizontalLine />
-			<c:EditText Placeholder="Keyboard: phone" Keyboard="phone" />
+			<c:EditText Placeholder="Keyboard: phone" Keyboard="phone" OnChange="$OnChange()"/>
 			<c:HorizontalLine />
-			<c:MemoEdit Placeholder="Keyboard: phone" Keyboard="phone" />
+			<c:MemoEdit Placeholder="Keyboard: phone" Keyboard="phone" OnChange="$OnChange()"/>
 			<c:HorizontalLine />
 
 		</c:ScrollView>
