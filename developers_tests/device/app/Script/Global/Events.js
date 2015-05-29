@@ -37,7 +37,7 @@ function OnWorkflowFinish(name, reason) {
 }
 
 function OnWorkflowFinished(name, reason) {
-	Console.WriteLine("OnWorkflowFinished: " + name);
+	Dialog.Debug("OnWorkflowFinished: " + name);
 }
 
 function OnWorkflowPause(name) {

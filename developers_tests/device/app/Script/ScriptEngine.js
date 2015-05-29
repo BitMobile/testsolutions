@@ -1,9 +1,9 @@
 function OnLoading(name){
-	Console.WriteLine("OnLoading: " + name);
+	Dialog.Debug("OnLoading: " + name);
 }
 
 function OnLoad(name){
-	Console.WriteLine("OnLoad: " + name);
+	Dialog.Debug("OnLoad: " + name);
 }
 
 
@@ -101,7 +101,7 @@ function ShowArray(sender, arr, arr2d, nullArr) {
 	if (arr === null) {
 		Dialog.Message("arr == null error");
 	} else if (arr != null) {
-		Console.WriteLine("Simple array: " + arr.length);
+		Dialog.Debug("Simple array: " + arr.length);
 		Console.WriteLine(arr.join());		
 	}
 	else{
@@ -111,7 +111,7 @@ function ShowArray(sender, arr, arr2d, nullArr) {
 	if (arr2d === null) {
 		Dialog.Message("arr2d == null error");
 	} else if (arr2d != null) {
-		Console.WriteLine("2d array: " + arr2d.length);		
+		Dialog.Debug("2d array: " + arr2d.length);		
 		for(var i = 0; i < arr2d.length; i++)
 			Console.WriteLine(arr2d[i].join());
 	}

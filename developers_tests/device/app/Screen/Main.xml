@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
 	<c:ScrollView>
+	<s:If Test="$workflow.name=='Main'">
+		</s:If> <!-- Комментарий --> 
+
 		<c:HorizontalLayout CssClass="like_button">
 			<c:Indicator Id="indicator"/>
 			<c:Button Text="Sync" OnClickAction="$DoSync($indicator)" />
-		</c:HorizontalLayout>
+		</c:HorizontalLayout> 
 		<c:Button Text="Size to content" OnClickAction="$DoAction(SizeToContent)" />
 		<c:Button Text="Style of TextView and Button" OnClickAction="$DoAction(StyleText)" />
 		<c:Button Text="Application commands" OnClickAction="$DoAction(ApplicationCmd)" />
@@ -28,6 +31,6 @@
 		<c:Button Text="Style: selected-color and selected-background"
 			OnClickAction="$DoAction(Styles_Selected)" />
 		<c:Button Text="ValueStack: Common" OnClickAction="$DoAction(ValueStack_Common)" />
-
+		
 	</c:ScrollView>
 </c:Screen>
