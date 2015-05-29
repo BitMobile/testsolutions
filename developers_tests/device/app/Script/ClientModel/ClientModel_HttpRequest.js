@@ -31,10 +31,11 @@ function HttpPost(address, query, text) {
 function CreateRequest(address) {
 	var request = new HttpRequest(address);
 
-	for (var i = 0; i < headers.length; i++) {
-		var h = headers[i];
-		request.AddHeader(h[0], h[1]);
-	}
+	if (headers.length > 0)
+		for (var i = 0; i < headers.length; i++) {
+			var h = headers[i];
+			request.AddHeader(h[0], h[1]);
+		}
 
 	request.UserName = "demosr";
 	request.Password = "demosr";

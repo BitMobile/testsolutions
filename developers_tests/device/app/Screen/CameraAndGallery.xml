@@ -7,6 +7,8 @@
 		<c:EditText Id="size" Text="0" Placeholder="Size" Keyboard="numeric"/>
 		<c:Button Text="Ask" OnClick="$Ask($path)" />
 		<c:Button Text="Choose" OnClick="$Choose($path)" />
+		<c:Button Text="Camera" OnClickAction="$CameraCallback($path)" />		
+		<c:Button Text="Gallery" OnClickAction="$GalleryCallback($path)" />
 		<c:Image Source="$path"/>		
 	</c:VerticalLayout>
 </c:Screen>
