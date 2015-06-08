@@ -1,0 +1,61 @@
+.root{	
+	height: 0% auto;
+}
+
+.button-initial{	
+	text-format: html;
+	background-color: #f00;
+	border-style: solid;
+	border-color: #0f0;
+	border-radius: 20dp;
+	border-width: 5dp;
+	white-space: nowrap;	
+}
+
+.button-new {
+	width: 60%;
+	height: 50mm;
+	text-format: text;
+	background-color: #0f0;
+	border-style: none;	
+	white-space: normal;
+}
+
+.button-initial-ex{
+	width: 0%;
+	text-format: text;
+	background-image: url(cat2.jpg);	
+	white-space: normal;
+}
+
+.button-new-ex{
+	width: 50%;
+	height: 0%;
+	text-format: html;
+	background-image: url(cat6.jpg);	
+	white-space: nowrap;	
+}
+
+.root Button{
+	font: 50% arial;
+	color: #fff;
+	selected-color: #0f0;
+	selected-background: #00f;
+	text-align: left;
+	padding-left: 0%;
+	padding-top: 0%;
+	padding-right: 50%;
+	padding-bottom: 50%;
+}
+
+.root-new Button{
+	font-size: 50dp;
+	color: #000;
+	selected-color: #00f;
+	selected-background: #f00;
+	text-align: right;
+	padding-left: 50%;
+	padding-top: 50%;
+	padding-right: 0%;
+	padding-bottom: 0%;
+}
