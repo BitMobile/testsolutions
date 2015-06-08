@@ -58,5 +58,36 @@ function RefreshLayouts(){
 		$.vl_child_ex.CssClass = "child-ex";
 	}
 
-	$.vl_child_ex.Refresh(); // because root layouts has auto width or height, refresh applied to its parent 
+	// because root layouts has resizable width or height, refresh applied to its parent
+	$.vl_child_ex.Refresh();  
+}
+
+function RefreshEditText(){
+	if ($.root.CssClass == "root") {
+		$.root.CssClass = "root-new";
+		$.editText.CssClass = "new";
+		$.editText_ex.CssClass = "new";
+	}
+	else {
+		$.root.CssClass = "root";
+		$.editText.CssClass = "initial";
+		$.editText_ex.CssClass = "initial";
+	}
+
+	$.root.Refresh();
+}
+
+function RefreshMemoEdit(){
+	if ($.root.CssClass == "root") {
+		$.root.CssClass = "root-new";
+		$.memoEdit.CssClass = "new";
+		$.memoEdit_ex.CssClass = "new";
+	}
+	else {
+		$.root.CssClass = "root";
+		$.memoEdit.CssClass = "initial";
+		$.memoEdit_ex.CssClass = "initial";
+	}
+
+	$.root.Refresh();
 }

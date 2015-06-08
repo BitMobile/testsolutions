@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Refresh_Styles_EditText.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="Refresh" OnClick="$RefreshEditText()" />
+		<c:HorizontalLine CssClass="top_line" />
+		<c:DockLayout Id="root" CssClass="root">
+			<c:EditText Id="editText" Text="Txt" CssClass="initial" />
+			<c:EditText Id="editText_ex" Placeholder="Plhd" CssClass="initial" />
+		</c:DockLayout>
+	</c:VerticalLayout>
+</c:Screen>
