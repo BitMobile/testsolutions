@@ -14,7 +14,7 @@ function RefreshButtons() {
 		$.button_ex.CssClass = "button-initial-ex";
 	}
 
-	$.root.Refresh();
+	$.button_ex.Refresh();
 }
 
 function RefreshTextViews() {
@@ -29,7 +29,7 @@ function RefreshTextViews() {
 		$.textView_ex.CssClass = "textView-initial-ex";
 	}
 
-	$.root.Refresh();
+	$.textView.Refresh();
 }
 
 function RefreshLayouts(){
@@ -76,7 +76,7 @@ function RefreshEditText(){
 		$.editText_ex.CssClass = "initial";
 	}
 
-	$.root.Refresh();
+	$.editText_ex.Refresh();
 }
 
 function RefreshMemoEdit(){
@@ -91,7 +91,7 @@ function RefreshMemoEdit(){
 		$.memoEdit_ex.CssClass = "initial";
 	}
 
-	$.root.Refresh();
+	$.memoEdit.Refresh();
 }
 
 function RefreshSwipeLayouts(){
@@ -106,7 +106,7 @@ function RefreshSwipeLayouts(){
 		$.svl.CssClass = "initial";
 	}
 
-	$.root.Refresh();
+	$.shl.Refresh();
 }
 
 function RefreshImage(){
@@ -119,7 +119,7 @@ function RefreshImage(){
 		$.img.CssClass = "initial";		
 	}
 
-	$.root.Refresh();
+	$.img.Refresh();
 }
 
 function RefreshScrollView(){
@@ -152,5 +152,5 @@ function RefreshScrollView(){
 		$.img9.CssClass = "cat9";
 	}
 
-	$.root.Refresh();
+	$.sv.Refresh();
 }

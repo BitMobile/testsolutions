@@ -1,8 +1,10 @@
 .initial {
+	width: 100%;
 	background-image: url(cat2.jpg);
 }
 
 .new {
+	width: 50%;
 	background-image: url(cat7.png);
 }
 
