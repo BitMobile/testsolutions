@@ -32,12 +32,14 @@ svl Image {
 	width: 50%;
 }
 
-/*.root shl {
+.root shl {
 	background-color: #f00;
 	border-style: solid;
 	border-color: #0f0;
 	border-radius: 20dp;
 	border-width: 10dp;
+	padding-top: 20%;
+	padding-bottom: 0%;
 }
 
 .root-new shl {
@@ -46,12 +48,18 @@ svl Image {
 	border-color: #00f;
 	border-radius: 50dp;
 	border-width: 10dp;
+	padding-top: 0%;
+	padding-bottom: 20%;
 }
 
 .root svl {
 	background-image: url(BiBiCar.png);
+	padding-left: 20%;
+	padding-right: 0%;
 }
 
 .root-new svl {
 	background-image: url(button_menu.png);
-}*/
+	padding-left: 0%;
+	padding-right: 20%;
+}
