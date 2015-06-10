@@ -121,3 +121,36 @@ function RefreshImage(){
 
 	$.root.Refresh();
 }
+
+function RefreshScrollView(){
+	if ($.root.CssClass == "root") {
+		$.root.CssClass = "root-new";
+		$.sv.CssClass = "new";		
+		$.img0.CssClass = "cat9";
+		$.img1.CssClass = "cat8";
+		$.img2.CssClass = "cat7";
+		$.img3.CssClass = "cat6";
+		$.img4.CssClass = "cat5";
+		$.img5.CssClass = "cat4";
+		$.img6.CssClass = "cat3";
+		$.img7.CssClass = "cat2";
+		$.img8.CssClass = "cat1";
+		$.img9.CssClass = "cat0";
+	}
+	else {
+		$.root.CssClass = "root";
+		$.sv.CssClass = "initial";		
+		$.img0.CssClass = "cat0";
+		$.img1.CssClass = "cat1";
+		$.img2.CssClass = "cat2";
+		$.img3.CssClass = "cat3";
+		$.img4.CssClass = "cat4";
+		$.img5.CssClass = "cat5";
+		$.img6.CssClass = "cat6";
+		$.img7.CssClass = "cat7";
+		$.img8.CssClass = "cat8";
+		$.img9.CssClass = "cat9";
+	}
+
+	$.root.Refresh();
+}
