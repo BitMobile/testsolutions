@@ -7,11 +7,12 @@
 		<c:Button Text="Layout" OnClickAction="$DoAction(Layout)" />
 		<c:Button Text="EditText" OnClickAction="$DoAction(EditText)" />
 		<c:Button Text="MemoEdit" OnClickAction="$DoAction(MemoEdit)" />
+		<c:Button Text="SwipeLayout" OnClickAction="$DoAction(SwipeLayout)" />
 		<!--<c:Button Text="HorizontalLine" OnClickAction="$DoAction(HorizontalLine)" />
 		<c:Button Text="Image" OnClickAction="$DoAction(Image)" />
 		<c:Button Text="Indicator" OnClickAction="$DoAction(Indicator)" />		
-		<c:Button Text="ScrollView" OnClickAction="$DoAction(ScrollView)" />
-		<c:Button Text="SwipeLayout" OnClickAction="$DoAction(SwipeLayout)" />-->
+		<c:Button Text="ScrollView" OnClickAction="$DoAction(ScrollView)" />-->
+		
 		<c:Button Text="TextView" OnClickAction="$DoAction(TextView)" />		
 	</c:VerticalLayout>
 </c:Screen>

@@ -1,0 +1,57 @@
+shl {	
+	height: 400dp;
+}
+
+svl {	
+	height: 1000dp;
+}
+
+shl Image {
+	width: 0%;
+	height: 100%;
+}
+
+svl Image {
+	width: 100%;
+	height: 0%;
+}
+
+.root {
+	height: 100%;
+}
+
+.root-new {
+	height: 0% auto;
+}
+
+.initial {
+	width: 100%;
+}
+
+.new {
+	width: 50%;
+}
+
+/*.root shl {
+	background-color: #f00;
+	border-style: solid;
+	border-color: #0f0;
+	border-radius: 20dp;
+	border-width: 10dp;
+}
+
+.root-new shl {
+	background-color: #0f0;
+	border-style: solid;
+	border-color: #00f;
+	border-radius: 50dp;
+	border-width: 10dp;
+}
+
+.root svl {
+	background-image: url(BiBiCar.png);
+}
+
+.root-new svl {
+	background-image: url(button_menu.png);
+}*/

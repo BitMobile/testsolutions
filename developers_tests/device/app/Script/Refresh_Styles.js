@@ -91,3 +91,18 @@ function RefreshMemoEdit(){
 
 	$.root.Refresh();
 }
+
+function RefreshSwipeLayouts(){
+	if ($.root.CssClass == "root") {
+		$.root.CssClass = "root-new";
+		$.shl.CssClass = "new";
+		$.svl.CssClass = "new";
+	}
+	else {
+		$.root.CssClass = "root";
+		$.shl.CssClass = "initial";
+		$.svl.CssClass = "initial";
+	}
+
+	$.root.Refresh();
+}

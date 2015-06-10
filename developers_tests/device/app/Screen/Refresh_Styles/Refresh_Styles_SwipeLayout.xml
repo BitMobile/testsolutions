@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Refresh_Styles_SwipeLayout.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="Refresh" OnClick="$RefreshSwipeLayouts()" />
+		<c:HorizontalLine CssClass="top_line" />
+		<c:DockLayout Id="root" CssClass="root">
+			<c:SwipeHorizontalLayout Id="shl" CssClass="initial">
+				<c:Image CssClass="cat3" />
+				<c:Image CssClass="cat2" />
+				<c:Image CssClass="cat0" />
+				<c:Image CssClass="cat1" />
+				<c:Image CssClass="cat6" />
+				<c:Image CssClass="cat7" />
+				<c:Image CssClass="cat8" />
+				<c:Image CssClass="cat9" />
+				<c:Image CssClass="cat4" />
+				<c:Image CssClass="cat5" />
+			</c:SwipeHorizontalLayout>
+			<c:SwipeVerticalLayout Id="svl" CssClass="initial">
+				<c:Image CssClass="cat5" />
+				<c:Image CssClass="cat2" />
+				<c:Image CssClass="cat0" />
+				<c:Image CssClass="cat1" />
+				<c:Image CssClass="cat3" />
+				<c:Image CssClass="cat6" />
+				<c:Image CssClass="cat7" />
+				<c:Image CssClass="cat8" />
+				<c:Image CssClass="cat4" />
+				<c:Image CssClass="cat9" />
+			</c:SwipeVerticalLayout>
+		</c:DockLayout>
+	</c:VerticalLayout>
+</c:Screen>
