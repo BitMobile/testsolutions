@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
-	StyleSheet="Refresh_Styles_TextView.css">
+	StyleSheet="Refresh_Styles_Image.css">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
-		<c:Button Text="Refresh" OnClick="$RefreshTextViews()" />
+		<c:Button Text="Refresh" OnClick="$RefreshImage()" />
 		<c:HorizontalLine CssClass="small-line" />
 		<c:DockLayout Id="root" CssClass="root" OnClickAction="$Empty()">
-			<c:TextView Id="textView"
-				Text="#b#A#_b# #i#B#_i#"
-				CssClass="textView-initial"/>
-			<c:TextView Id="textView_ex"
-				Text="##b#A#_b# #i#B#_i#"
-				CssClass="textView-initial-ex"/>
+			<c:Image Id="img" CssClass="initial"/>
 		</c:DockLayout>
 	</c:VerticalLayout>
 </c:Screen>

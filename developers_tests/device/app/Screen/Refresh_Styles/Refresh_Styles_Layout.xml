@@ -4,7 +4,7 @@
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
 		<c:Button Text="Refresh" OnClick="$RefreshLayouts()" />
-		<c:HorizontalLine CssClass="top_line" />
+		<c:HorizontalLine Id="line" CssClass="small-line" />
 		<c:HorizontalLayout Id="hl" CssClass="root"	OnClick="$Empty()">
 			<c:HorizontalLayout Id="hl_child" CssClass="child" />
 			<c:HorizontalLayout Id="hl_child_ex" CssClass="child-ex" />

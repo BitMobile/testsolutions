@@ -4,7 +4,7 @@
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
 		<c:Button Text="Refresh" OnClick="$RefreshButtons()" />
-		<c:HorizontalLine CssClass="top_line" />
+		<c:HorizontalLine CssClass="small-line" />
 		<c:DockLayout Id="root" CssClass="root">
 			<c:Button Id="button"
 				Text="#b#A#_b# #i#B#_i#"

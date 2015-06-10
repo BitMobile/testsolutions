@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
-	StyleSheet="Refresh_Styles_TextView.css">
+	StyleSheet="Refresh_Styles_ScrollView.css">
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
 		<c:Button Text="Refresh" OnClick="$RefreshTextViews()" />

@@ -102,8 +102,17 @@
 	font-size: 40% ;
 }
 
-.top_line{
+.small-line{
 	height: 5dp;
+}
+
+.huge-line{	
+	height: 20dp;
+	background-color: #f0f;
+}
+
+.empty-image{
+	background-image: url(geo_empty.png);
 }
 
 .cat0 {

@@ -1,0 +1,15 @@
+.initial {
+	background-image: url(cat2.jpg);
+}
+
+.new {
+	background-image: url(cat7.png);
+}
+
+.root img {
+	selected-color: #00f;
+}
+
+.root-new img {
+	selected-color: #0f0;
+}

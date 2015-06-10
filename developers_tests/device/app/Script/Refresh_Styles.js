@@ -44,6 +44,7 @@ function RefreshLayouts(){
 		$.vl.CssClass = "root-new";
 		$.vl_child.CssClass = "child-new";
 		$.vl_child_ex.CssClass = "child-ex-new";
+		$.line.CssClass = "huge-line";
 	}
 	else {
 		$.hl.CssClass = "root";
@@ -56,6 +57,7 @@ function RefreshLayouts(){
 		$.vl.CssClass = "root";
 		$.vl_child.CssClass = "child";
 		$.vl_child_ex.CssClass = "child-ex";
+		$.line.CssClass = "small-line";
 	}
 
 	// because root layouts has resizable width or height, refresh applied to its parent
@@ -102,6 +104,19 @@ function RefreshSwipeLayouts(){
 		$.root.CssClass = "root";
 		$.shl.CssClass = "initial";
 		$.svl.CssClass = "initial";
+	}
+
+	$.root.Refresh();
+}
+
+function RefreshImage(){
+	if ($.root.CssClass == "root") {
+		$.root.CssClass = "root-new";
+		$.img.CssClass = "new";		
+	}
+	else {
+		$.root.CssClass = "root";
+		$.img.CssClass = "initial";		
 	}
 
 	$.root.Refresh();

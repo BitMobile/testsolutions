@@ -187,13 +187,10 @@
 			<bp:Action Name="SwipeLayout" NextStep="SwipeLayout" />
 			<bp:Action Name="TextView" NextStep="TextView" />
 		</bp:Step>
-		<bp:Step Name="Button" Screen="Refresh_Styles\Refresh_Styles_Button.xml"/>
-		<bp:Step Name="CheckBox" Screen="Refresh_Styles\Refresh_Styles_CheckBox.xml"/>
+		<bp:Step Name="Button" Screen="Refresh_Styles\Refresh_Styles_Button.xml"/>		
 		<bp:Step Name="Layout" Screen="Refresh_Styles\Refresh_Styles_Layout.xml"/>
-		<bp:Step Name="EditText" Screen="Refresh_Styles\Refresh_Styles_EditText.xml"/>
-		<bp:Step Name="HorizontalLine" Screen="Refresh_Styles\Refresh_Styles_HorizontalLine.xml"/>
-		<bp:Step Name="Image" Screen="Refresh_Styles\Refresh_Styles_Image.xml"/>
-		<bp:Step Name="Indicator" Screen="Refresh_Styles\Refresh_Styles_Indicator.xml"/>
+		<bp:Step Name="EditText" Screen="Refresh_Styles\Refresh_Styles_EditText.xml"/>		
+		<bp:Step Name="Image" Screen="Refresh_Styles\Refresh_Styles_Image.xml"/>		
 		<bp:Step Name="MemoEdit" Screen="Refresh_Styles\Refresh_Styles_MemoEdit.xml"/>
 		<bp:Step Name="ScrollView" Screen="Refresh_Styles\Refresh_Styles_ScrollView.xml"/>
 		<bp:Step Name="SwipeLayout" Screen="Refresh_Styles\Refresh_Styles_SwipeLayout.xml"/>
