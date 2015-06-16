@@ -7,10 +7,10 @@
 		<c:HorizontalLine CssClass="small-line" />
 		<c:DockLayout Id="root" CssClass="root">
 			<c:Button Id="button"
-				Text="#b#A#_b# #i#B#_i#"
+				Text="#b#A#_b# #i#B#_i# "
 				CssClass="button-initial" OnClickAction="$Empty()" />
 			<c:Button Id="button_ex"
-				Text="##b#A#_b# #i#B#_i#"
+				Text="#b#A#_b# #i#B#_i# #b#A#_b# #i#B#_i# #b#A#_b# #i#B#_i# #b#A#_b# #i#B#_i# "
 				CssClass="button-initial-ex" OnClickAction="$Empty()" />
 		</c:DockLayout>
 	</c:VerticalLayout>

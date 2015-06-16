@@ -3,7 +3,6 @@
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClickAction="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Button" OnClickAction="$DoAction(Button)" />
-
 		<c:Button Text="Layout" OnClickAction="$DoAction(Layout)" />
 		<c:Button Text="EditText" OnClickAction="$DoAction(EditText)" />
 		<c:Button Text="MemoEdit" OnClickAction="$DoAction(MemoEdit)" />

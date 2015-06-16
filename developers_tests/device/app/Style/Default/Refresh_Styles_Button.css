@@ -13,7 +13,7 @@
 	border-color: #0f0;
 	border-radius: 20dp;
 	border-width: 5dp;
-	white-space: nowrap;	
+	white-space: normal;	
 }
 
 .button-new {
@@ -29,15 +29,15 @@
 	width: 0%;
 	text-format: text;
 	background-image: url(cat2.jpg);	
-	white-space: normal;
+	white-space: nowrap;
 }
 
 .button-new-ex{
 	width: 50%;
 	height: 0%;
 	text-format: html;
-	background-image: url(cat6.jpg);	
-	white-space: nowrap;	
+	background-image: url(cat7.png);	
+	white-space: normal;	
 }
 
 .root Button{
