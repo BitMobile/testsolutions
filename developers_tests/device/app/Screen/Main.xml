@@ -31,6 +31,7 @@
 		<c:Button Text="Style: selected-color and selected-background"
 			OnClickAction="$DoAction(Styles_Selected)" />
 		<c:Button Text="ValueStack: Common" OnClickAction="$DoAction(ValueStack_Common)" />
+		<c:Button Text="Refresh styles" OnClickAction="$DoAction(Refresh_Styles)" />
 		
 	</c:ScrollView>
 </c:Screen>

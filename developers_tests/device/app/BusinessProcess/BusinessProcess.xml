@@ -25,6 +25,7 @@
 			<bp:Action Name="ScriptEngine" NextWorkflow="ScriptEngine" />
 			<bp:Action Name="Styles_Selected" NextWorkflow="Styles_Selected" />
 			<bp:Action Name="ValueStack_Common" NextWorkflow="ValueStack_Common" />
+			<bp:Action Name="Refresh_Styles" NextWorkflow="Refresh_Styles" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -175,6 +176,30 @@
 
 	<bp:Workflow Name="ValueStack_Common" Controller="Empty.js">
 		<bp:Step Name="ValueStack_Common" Screen="ValueStack_Common.xml"></bp:Step>
+	</bp:Workflow>
+
+	<bp:Workflow Name="Refresh_Styles" Controller="Refresh_Styles.js">
+		<bp:Step Name="Refresh_Styles" Screen="Refresh_Styles\Refresh_Styles.xml">
+			<bp:Action Name="Button" NextStep="Button" />
+			<bp:Action Name="CheckBox" NextStep="CheckBox" />
+			<bp:Action Name="Layout" NextStep="Layout" />
+			<bp:Action Name="EditText" NextStep="EditText" />
+			<bp:Action Name="HorizontalLine" NextStep="HorizontalLine" />
+			<bp:Action Name="Image" NextStep="Image" />
+			<bp:Action Name="Indicator" NextStep="Indicator" />
+			<bp:Action Name="MemoEdit" NextStep="MemoEdit" />
+			<bp:Action Name="ScrollView" NextStep="ScrollView" />
+			<bp:Action Name="SwipeLayout" NextStep="SwipeLayout" />
+			<bp:Action Name="TextView" NextStep="TextView" />
+		</bp:Step>
+		<bp:Step Name="Button" Screen="Refresh_Styles\Refresh_Styles_Button.xml"/>		
+		<bp:Step Name="Layout" Screen="Refresh_Styles\Refresh_Styles_Layout.xml"/>
+		<bp:Step Name="EditText" Screen="Refresh_Styles\Refresh_Styles_EditText.xml"/>		
+		<bp:Step Name="Image" Screen="Refresh_Styles\Refresh_Styles_Image.xml"/>		
+		<bp:Step Name="MemoEdit" Screen="Refresh_Styles\Refresh_Styles_MemoEdit.xml"/>
+		<bp:Step Name="ScrollView" Screen="Refresh_Styles\Refresh_Styles_ScrollView.xml"/>
+		<bp:Step Name="SwipeLayout" Screen="Refresh_Styles\Refresh_Styles_SwipeLayout.xml"/>
+		<bp:Step Name="TextView" Screen="Refresh_Styles\Refresh_Styles_TextView.xml"/>		
 	</bp:Workflow>
 
 </bp:BusinessProcess>

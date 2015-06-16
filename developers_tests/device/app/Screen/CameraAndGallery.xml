@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
-	<s:Push Id="path" Value="/private/text.jpg"/>
+	<s:Push Id="path" Value="/private/test.jpg"/>
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:TextView Text="$path"/>
 		<c:EditText Id="size" Text="0" Placeholder="Size" Keyboard="numeric"/>
 		<c:Button Text="Ask" OnClick="$Ask($path)" />
 		<c:Button Text="Choose" OnClick="$Choose($path)" />
-		<c:Button Text="Camera" OnClickAction="$CameraCallback($path)" />		
+		<c:Button Text="Camera" OnClickAction="$CameraCallback($path)" />
 		<c:Button Text="Gallery" OnClickAction="$GalleryCallback($path)" />
-		<c:Image Source="$path"/>		
+		<c:Image Id="img" CssClass="empty-image"/>
 	</c:VerticalLayout>
 </c:Screen>

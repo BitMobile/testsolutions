@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Refresh_Styles_Layout.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="Refresh" OnClick="$RefreshLayouts()" />
+		<c:HorizontalLine Id="line" CssClass="small-line" />
+		<c:HorizontalLayout Id="hl" CssClass="root"	OnClick="$Empty()">
+			<c:HorizontalLayout Id="hl_child" CssClass="child" />
+			<c:HorizontalLayout Id="hl_child_ex" CssClass="child-ex" />
+		</c:HorizontalLayout>
+		<c:HorizontalLine CssClass="top_line" />
+		<c:DockLayout Id="dl" CssClass="root" OnClick="$Empty()">
+			<c:HorizontalLayout Id="dl_child" CssClass="child" />
+			<c:HorizontalLayout Id="dl_child_ex" CssClass="child-ex" />
+			<c:HorizontalLayout Id="dl_child1" CssClass="child" />
+		</c:DockLayout>
+		<c:HorizontalLine CssClass="top_line" />
+		<c:VerticalLayout Id="vl" CssClass="root" OnClick="$Empty()">
+			<c:HorizontalLayout Id="vl_child" CssClass="child" />
+			<c:HorizontalLayout Id="vl_child_ex" CssClass="child-ex" />
+		</c:VerticalLayout>
+		<c:HorizontalLine CssClass="top_line" />
+	</c:VerticalLayout>
+</c:Screen>

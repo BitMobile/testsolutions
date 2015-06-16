@@ -25,10 +25,18 @@ function CallbackChoose(path, args) {
 
 function GalleryCallback(path) {
 	Gallery.Size = Number($.size.Text);
-	Gallery.Copy(path, DoRefresh);
+	Gallery.Copy(path, Callback, path);
 }
 
 function CameraCallback(path) {
 	Camera.Size = Number($.size.Text);
-	Camera.MakeSnapshot(path, DoRefresh);
+	Camera.MakeSnapshot(path, Callback, path);
+}
+
+function Callback(path, args) {
+	if (args.Result) 
+		$.img.Source = path;	
+	else 
+		$.img.Source = null;
+	$.img.Refresh();
 }

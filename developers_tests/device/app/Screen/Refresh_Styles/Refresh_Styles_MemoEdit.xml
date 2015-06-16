@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="Refresh_Styles_MemoEdit.css">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="Refresh" OnClick="$RefreshMemoEdit()" />
+		<c:HorizontalLine CssClass="small-line" />
+		<c:DockLayout Id="root" CssClass="root">
+			<c:MemoEdit Id="memoEdit" Text="Hello world! Hello!!! World!!! Lol!!!"
+				CssClass="initial" />
+			<c:MemoEdit Id="memoEdit_ex"
+				Placeholder="Yep, this is placeholder. Big color placeholder, bro!"
+				CssClass="initial" />
+		</c:DockLayout>
+	</c:VerticalLayout>
+</c:Screen>

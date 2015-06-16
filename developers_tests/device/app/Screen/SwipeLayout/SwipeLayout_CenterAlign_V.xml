@@ -12,7 +12,7 @@
 		</c:HorizontalLayout>
 
 		<c:SwipeVerticalLayout Id="swipeLayout"
-			Alignment="$alignment">
+			Alignment="$alignment" Index="3">
 			<c:Image CssClass="cat5" />
 			<c:Image CssClass="cat2" />
 			<c:Image CssClass="cat0" />
