@@ -4,6 +4,15 @@ function OnApplicationInit() {
 	var r = Global.TestResult();
 }
 
+function OnPushMessage(message) {
+	CurrentController.OnPushMessage(message);
+	
+	var q = new Query("SELECT * FROM Catalog_User");
+	q.Execute();
+	
+	LocalNotification.Notify("New notification!" , message);
+}
+
 // ------------------------ Events ------------------------
 
 function OnLoad(screenName) {
@@ -37,7 +46,7 @@ function OnWorkflowFinish(name, reason) {
 }
 
 function OnWorkflowFinished(name, reason) {
-	Dialog.Debug("OnWorkflowFinished: " + name);
+	Console.WriteLine("OnWorkflowFinished: " + name);
 }
 
 function OnWorkflowPause(name) {

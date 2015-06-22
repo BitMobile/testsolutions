@@ -111,6 +111,13 @@
 	background-color: #f0f;
 }
 
+.big-text{
+	width: 100%;
+	height: 100%;
+	white-space: normal;
+	font: 40dp arial;
+}
+
 .empty-image{
 	background-image: url(geo_empty.png);
 }

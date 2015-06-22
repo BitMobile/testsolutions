@@ -26,6 +26,7 @@
 			<bp:Action Name="Styles_Selected" NextWorkflow="Styles_Selected" />
 			<bp:Action Name="ValueStack_Common" NextWorkflow="ValueStack_Common" />
 			<bp:Action Name="Refresh_Styles" NextWorkflow="Refresh_Styles" />
+			<bp:Action Name="PushNotification" NextWorkflow="PushNotification" />
 		</bp:Step>
 	</bp:Workflow>
 
@@ -200,6 +201,10 @@
 		<bp:Step Name="ScrollView" Screen="Refresh_Styles\Refresh_Styles_ScrollView.xml"/>
 		<bp:Step Name="SwipeLayout" Screen="Refresh_Styles\Refresh_Styles_SwipeLayout.xml"/>
 		<bp:Step Name="TextView" Screen="Refresh_Styles\Refresh_Styles_TextView.xml"/>		
+	</bp:Workflow>
+	
+	<bp:Workflow Name="PushNotification">
+		<bp:Step Name="PushNotification" Screen="PushNotification.xml" Controller="PushNotification.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>

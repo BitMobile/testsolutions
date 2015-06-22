@@ -32,6 +32,6 @@
 			OnClickAction="$DoAction(Styles_Selected)" />
 		<c:Button Text="ValueStack: Common" OnClickAction="$DoAction(ValueStack_Common)" />
 		<c:Button Text="Refresh styles" OnClickAction="$DoAction(Refresh_Styles)" />
-		
+		<c:Button Text="PushNotification" OnClickAction="$DoAction(PushNotification)" />		
 	</c:ScrollView>
 </c:Screen>

@@ -152,5 +152,5 @@ function RefreshScrollView(){
 		$.img9.CssClass = "cat9";
 	}
 
-	$.sv.Refresh();
+	$.img0.Refresh();
 }
