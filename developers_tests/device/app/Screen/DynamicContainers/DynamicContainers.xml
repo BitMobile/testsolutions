@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout Id="vl">
+		<c:Button Text="Back" OnClickAction="$DoBack()" OnEvent="Back" />
+		<c:Button Text="HorizontalLayout" OnClickAction="$DoAction(HorizontalLayout)" />
+		<c:Button Text="VerticalLayout" OnClickAction="$DoAction(VerticalLayout)" />
+		<c:Button Text="DockLayout" OnClickAction="$DoAction(DockLayout)" />
+		<c:Button Text="SwipeHorizontalLayout" OnClickAction="$DoAction(SwipeHorizontalLayout)" />
+		<c:Button Text="SwipeVerticalLayout" OnClickAction="$DoAction(SwipeVerticalLayout)" />
+		<c:Button Text="ScrollView" OnClickAction="$DoAction(ScrollView)" />	
+		
+	</c:VerticalLayout>
+</c:Screen>

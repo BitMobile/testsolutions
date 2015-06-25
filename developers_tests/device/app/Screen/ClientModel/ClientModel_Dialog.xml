@@ -7,8 +7,8 @@
 		<c:Button Text="Dialog.Message" OnClick="$Message()"/>
 		<c:Button Text="Dialog.Debug" OnClick="$Debug()"/>
 		<c:Button Text="Dialog.DateTime" OnClick="$DateTimeDialog()"/>
-		<c:Button Text="Dialog.Date" OnClick="$Date()"/>
-		<c:Button Text="Dialog.Time" OnClick="$Time()"/>
+		<c:Button Text="Dialog.Date" OnClick="$DateDialog()"/>
+		<c:Button Text="Dialog.Time" OnClick="$TimeDialog()"/>
 		<c:Button Text="Dialog.Choose" OnClick="$Choose()"/>
 		<c:Button Text="Dialog.Choose with nullable key" OnClickAction="$NullableChoose()" />
 				

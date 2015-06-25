@@ -15,17 +15,17 @@ function Debug() {
 }
 
 function DateTimeDialog() {
-	Dialog.DateTime("DateTime!", BegOfWeek(CurrentDate()), DialogCallbackP, "",
+	Dialog.DateTime("DateTime!", Date("14.11.1989 08:45"), DialogCallbackP, "",
 			DialogCallbackN, null);
 }
 
-function Date() {
-	Dialog.Date("Date!", BegOfWeek(CurrentDate()), DialogCallbackP, "",
+function DateDialog() {
+	Dialog.Date("Date!", Date("14.11.1989 08:45"), DialogCallbackP, "",
 			DialogCallbackN, null);
 }
 
-function Time() {
-	Dialog.Time("Time!", BegOfWeek(CurrentDate()), DialogCallbackP, "",
+function TimeDialog() {
+	Dialog.Time("Time!", Date("14.11.1989 08:45"), DialogCallbackP, "",
 			DialogCallbackN, null);
 }
 

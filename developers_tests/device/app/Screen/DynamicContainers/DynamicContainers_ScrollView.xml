@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="DynamicContainers_VerticalLayout.css">
+	<c:VerticalLayout Id="vl">
+		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
+		<c:Button Text="append" OnClick="$Append()" />
+		<c:Button Text="prepend" OnClick="$Prepend()" />
+		<c:Button Text="after" OnClick="$After()" />
+		<c:Button Text="before" OnClick="$Before()" />
+		<c:Button Text="remove from start" OnClick="$RemoveFromStart()" />
+		<c:Button Text="remove from finish" OnClick="$RemoveFromFinish()" />
+		<c:ScrollView Id="layout" CssClass="root">
+			<c:HorizontalLine Id="anchor" CssClass="anchor"/>
+		</c:ScrollView>
+	</c:VerticalLayout>
+</c:Screen>

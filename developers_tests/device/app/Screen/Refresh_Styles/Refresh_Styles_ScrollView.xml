@@ -7,25 +7,27 @@
 		<c:HorizontalLine CssClass="small-line" />
 		<c:DockLayout Id="root" CssClass="root">
 			<c:ScrollView Id="sv" CssClass="initial">
+				<c:TextView Text="Hello" />
 				<c:Image Id="img0" CssClass="cat0" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img1" CssClass="cat1" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img2" CssClass="cat2" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img3" CssClass="cat3" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img4" CssClass="cat4" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img5" CssClass="cat5" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img6" CssClass="cat6" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img7" CssClass="cat7" />
-				<c:HorizontalLine/>
+				<c:HorizontalLine />
 				<c:Image Id="img8" CssClass="cat8" />
-				<c:HorizontalLine/>
-				<c:Image Id="img9" CssClass="cat9" />				
+				<c:HorizontalLine />
+				<c:Image Id="img9" CssClass="cat9" />
+				<c:TextView Text="Hello" />
 			</c:ScrollView>
 		</c:DockLayout>
 	</c:VerticalLayout>

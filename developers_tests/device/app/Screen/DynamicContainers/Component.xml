@@ -1,0 +1,6 @@
+<c:Component xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:DockLayout Id="component" CssClass="component">
+		<c:TextView Text="Component"/>
+		<c:Image />		
+	</c:DockLayout>
+</c:Component>

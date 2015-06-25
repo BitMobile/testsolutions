@@ -1,0 +1,37 @@
+.root{
+	width: 100%;
+	height: 100%;
+}
+
+.root TextView{
+	width: 100%;
+	height: 20%;	
+	dock-align: bottom;
+}
+
+.anchor{
+	height: 10dp;
+	width: 100%;
+	background-color: #f00;
+	dock-align: bottom; 
+}
+
+.child{
+	height: 20%;
+	dock-align: bottom; 
+}
+
+.component{
+	width: 100%;
+	height: 20%;
+	dock-align: bottom; 
+}
+
+.component TextView{
+	dock-align: top;
+}
+
+.component Image{
+	dock-align: top;
+	background-image: url(cat8.jpg);
+}
