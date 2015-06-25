@@ -8,24 +8,24 @@
 
 		<c:DefaultStyles>
 
-			<c:DefaultStyle File="default.css" /><!-- Стили по умолчанию -->
+			<c:DefaultStyle File="Default\\default.css" /><!-- Стили по умолчанию -->
 			
 			<s:If Test="$isTablet">
-				<c:DefaultStyle File="tablet.css" /><!-- Стили, специфичные для планетов -->
+				<c:DefaultStyle File="Default\\tablet.css" /><!-- Стили, специфичные для планетов -->
 			</s:If>
 			<s:Else>
-				<c:DefaultStyle File="phone.css" /><!-- Стили, специфичные для телефонов-->
+				<c:DefaultStyle File="Default\\phone.css" /><!-- Стили, специфичные для телефонов-->
 			</s:Else>
 			
 			<s:If Test="$common.OS == 'Android'">
-				<c:DefaultStyle File="android.css" /><!-- Стили, специфичные для Android устройств-->
+				<c:DefaultStyle File="Default\\android.css" /><!-- Стили, специфичные для Android устройств-->
 			</s:If>
 			
 			<s:If Test="$common.OS == 'IOS'">
-				<c:DefaultStyle File="ios.css" /><!-- Стили, специфичные для IOS устройств-->
+				<c:DefaultStyle File="Default\\ios.css" /><!-- Стили, специфичные для IOS устройств-->
 			</s:If>			
 			
-			<c:DefaultStyle File="common.css" /><!-- Общие стили -->
+			<c:DefaultStyle File="Default\\common.css" /><!-- Общие стили -->
 
 		</c:DefaultStyles>
 
