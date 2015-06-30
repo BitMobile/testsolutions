@@ -33,6 +33,8 @@
 		<c:Button Text="ValueStack: Common" OnClickAction="$DoAction(ValueStack_Common)" />
 		<c:Button Text="Refresh styles" OnClickAction="$DoAction(Refresh_Styles)" />
 		<c:Button Text="PushNotification" OnClickAction="$DoAction(PushNotification)" />
-		<c:Button Text="Dynamic containers" OnClickAction="$DoAction(DynamicContainers)" />		
+		<c:Button Text="Dynamic containers" OnClickAction="$DoAction(DynamicContainers)" />
+		<c:Button Text="Media player" OnClickAction="$DoAction(MediaPlayer)" />
+				
 	</c:ScrollView>
 </c:Screen>

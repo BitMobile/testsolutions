@@ -28,6 +28,7 @@
 			<bp:Action Name="Refresh_Styles" NextWorkflow="Refresh_Styles" />
 			<bp:Action Name="PushNotification" NextWorkflow="PushNotification" />
 			<bp:Action Name="DynamicContainers" NextWorkflow="DynamicContainers" />
+			<bp:Action Name="MediaPlayer" NextWorkflow="MediaPlayer"/>
 		</bp:Step>
 	</bp:Workflow>
 
@@ -224,6 +225,10 @@
 		<bp:Step Name="SwipeHorizontalLayout" Screen="DynamicContainers\DynamicContainers_SwipeHorizontalLayout.xml" />
 		<bp:Step Name="SwipeVerticalLayout" Screen="DynamicContainers\DynamicContainers_SwipeVerticalLayout.xml" />
 		<bp:Step Name="ScrollView" Screen="DynamicContainers\DynamicContainers_ScrollView.xml" />		
+	</bp:Workflow>
+
+	<bp:Workflow Name="MediaPlayer">
+		<bp:Step Name="MediaPlayer" Screen="MediaPlayer.xml" Controller="MediaPlayer.js" />
 	</bp:Workflow>
 
 </bp:BusinessProcess>

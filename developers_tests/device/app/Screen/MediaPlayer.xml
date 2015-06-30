@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
+	<c:VerticalLayout>
+		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
+		<c:Button Text="Play" OnClick="$Play()" />
+		<c:Button Text="Pause" OnClick="$Pause()" />
+		<c:Button Text="Stop" OnClick="$Stop()" />
+		<c:Button Text="Change" OnClick="$Change()" />
+		<c:MediaPlayer Id="mediaPlayer" Path="/shared/movie.mp4"
+			AutoPlay="true" />
+	</c:VerticalLayout>
+</c:Screen>
