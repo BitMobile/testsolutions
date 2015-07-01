@@ -7,6 +7,10 @@ Button {
 	border-color: #fff;
 	border-radius: 1px;
 	selected-color: #ddd;
+	padding-left: 20dp;
+	padding-top: 10dp;
+	padding-right: 20dp;
+	padding-bottom: 10dp;
 }
 
 /*Задаем внешний вид текстовых блоков для всего проекта*/

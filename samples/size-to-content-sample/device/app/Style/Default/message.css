@@ -1,0 +1,16 @@
+svl {
+	height: 0% auto;
+	width: 100%;
+}
+
+Button {
+	height: 200dp;
+	dock-align: bottom;
+}
+
+.header {
+	width: 100%;
+	height: 0% auto;
+	font: 100dp arial;
+	white-space: normal;
+}
