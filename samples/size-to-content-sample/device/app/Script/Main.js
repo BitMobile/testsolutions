@@ -11,5 +11,9 @@
 }
 
 function OpenReport(report) {
-	Workflow.DoAction("Open", [ report ]);
+	DoAction("Message", report);
+}
+
+function Accept(sender, report){
+	// stub
 }

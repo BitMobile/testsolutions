@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack"
+	StyleSheet="message.css">
+	<s:Push Id="report" Value="$param1" />
+	<c:DockLayout CssClass="root">
+		<c:Button Text="#back#" OnClickAction="$DoBack()" />
+		<c:SwipeVerticalLayout>
+			<c:TextView Text="$report" CssClass="header" />
+			<c:Button Text="#accept#" OnClick="$Accept($report)"/>
+		</c:SwipeVerticalLayout>
+	</c:DockLayout>
+</c:Screen>

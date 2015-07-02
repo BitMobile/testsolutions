@@ -10,5 +10,10 @@
 	</c:Style>
 	<c:Script>
 		<c:GlobalEvents File="Global\Events.js" />
+
+		<c:Mixins>			
+			<c:Mixin File="Mixins\Workflow.js" Target="*.js" />
+			<c:Mixin File="Mixins\DB.js" Target="*.js" />
+		</c:Mixins>
 	</c:Script>
 </c:Configuration>

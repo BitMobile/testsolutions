@@ -5,3 +5,6 @@ cancel	Cancel
 ok	OK
 new_message	New message
 reports	Reports
+open	Open
+back	Back
+accept	Accept

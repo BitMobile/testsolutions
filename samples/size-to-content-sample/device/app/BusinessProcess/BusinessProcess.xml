@@ -3,8 +3,10 @@
 
 	<bp:Workflow Name="Main" Controller="Main.js">
 		<bp:Step Name="Main" Screen="Main.xml">
-			<bp:Action Name="Message" NextWorkflow="Message" />
+			<bp:Action Name="Message" NextStep="Message" />
 		</bp:Step>
+
+		<bp:Step Name="Message" Screen="Message.xml"/>
 	</bp:Workflow>
 
 </bp:BusinessProcess>

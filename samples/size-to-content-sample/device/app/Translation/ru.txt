@@ -4,4 +4,7 @@ sync_error	Ошибка синхронизации
 cancel	Отмена
 ok	ОК
 new_message	Новое сообщение
+open	Открыть
 reports	Отчеты
+back	Назад
+accept	Принять
