@@ -3,6 +3,8 @@
 	<c:VerticalLayout>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Start" OnClick="$Start()" />
+		<c:Button Text="Start with delay" OnClick="$Start(300)" />
+		<c:Button Text="Start with negative delay" OnClick="$Start(-1)" />
 		<c:Button Text="Stop" OnClick="$Stop()" />
 		<c:TextView Id="tvStatus" Text="Disabled"/>
 		<c:Button Text="Show" OnClick="$Show()" />

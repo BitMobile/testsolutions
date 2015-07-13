@@ -1,5 +1,10 @@
-function Start() {
-	GPS.StartTracking();
+function Start(sender, delay) {
+	delay = parseFloat(delay);
+	if(delay != NaN)		
+		GPS.StartTracking(delay);
+	else
+		GPS.StartTracking();	
+	
 	$.tvStatus.Text = "In progress...";
 }
 
