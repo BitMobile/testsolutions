@@ -6,4 +6,7 @@
 	<client>
 		<supportedCore version="2.3.5.92" />
 	</client>
+	<server>
+	<supportedMeta version="3.0.0.1"/>
+	</server>
 </configuration>

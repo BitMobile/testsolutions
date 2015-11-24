@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c:Screen xmlns:c="BitMobile.Controls" xmlns:s="BitMobile.ValueStack">
 	<c:VerticalLayout>
+		<c:TextView Text="http://youtube.com"/>
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Play" OnClick="$Play()" />
 		<c:Button Text="Pause" OnClick="$Pause()" />

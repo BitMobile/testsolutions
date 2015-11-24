@@ -6,6 +6,14 @@ function HttpAddHeader(controlName, controlValue) {
 	controlValue.Text = "";
 }
 
+function OpenHttp() {
+	try {
+		Web.OpenUrl("http://youtube.com")
+	} catch (e) {
+		Dialog.Message(e.StatusCode + ": " + e.Message);
+	}
+}
+
 function HttpGet(address, query) {
 	try {
 		request = CreateRequest(address);
