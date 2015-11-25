@@ -4,7 +4,7 @@
 		<c:Button Text="Back" OnClick="$DoBack()" OnEvent="Back" />
 		<c:Button Text="Open_Youtube" OnClick="$OpenHttp()" />
 		<c:EditText Id="address"
-			Text="http:///" />
+			Text="http://" />
 		<c:EditText Id="query"
 			Text="/" />
 		<c:HorizontalLine />
