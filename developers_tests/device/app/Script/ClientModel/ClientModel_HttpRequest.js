@@ -47,5 +47,6 @@ function CreateRequest(address) {
 
 	request.UserName = "demosr";
 	request.Password = "demosr";
+	request.Timeout="00:00:05"
 	return request;
 }

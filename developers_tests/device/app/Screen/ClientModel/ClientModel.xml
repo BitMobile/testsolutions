@@ -4,5 +4,6 @@
 		<c:Button Text="Back" OnClick="$DoRollback()" OnEvent="Back" />
 		<c:Button Text="Dialog" OnClickAction="$DoAction(Dialog)" />		
 		<c:Button Text="HttpRequest" OnClickAction="$DoAction(HttpRequest)" />
+		<c:Button Text="WebView" OnClickAction="$DoAction(WebView)" />
 	</c:ScrollView>
 </c:Screen>

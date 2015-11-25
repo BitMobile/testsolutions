@@ -158,11 +158,14 @@
 			Controller="Empty.js">
 			<bp:Action Name="Dialog" NextStep="Dialog" />
 			<bp:Action Name="HttpRequest" NextStep="HttpRequest" />
+			<bp:Action Name="WebView" NextStep="WebView" />
 		</bp:Step>
 		<bp:Step Name="Dialog" Screen="ClientModel\ClientModel_Dialog.xml"
 			Controller="ClientModel\ClientModel_Dialog.js" />
 		<bp:Step Name="HttpRequest" Screen="ClientModel\ClientModel_HttpRequest.xml"
 			Controller="ClientModel\ClientModel_HttpRequest.js" />
+		<bp:Step Name="WebView" Screen="ClientModel\ClientModel_WebView.xml"
+			Controller="ClientModel\ClientModel_WebView.js" />
 	</bp:Workflow>
 
 	<bp:Workflow Name="Validation" Controller="Validation.js">
